@@ -238,7 +238,7 @@ proxy-groups:
       - "[VMess] paikozu cvs-deo"
       - "[VMess] paikozu cf"
       - "[VMess] paikozu 55"
-      -"[VMess] paikozu video 204"
+      - "[VMess] paikozu video 204"
       - "[VMess] paikozu video quiz"
       - "[VMess] paikozu video tv"
 
