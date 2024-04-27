@@ -124,7 +124,6 @@ dns:
     - "*.ffxiv.com"
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
-
 proxies:
   - name: "[VMess] paikozu cvs-deo"
     server: cvs-deo.shopeemobile.com
@@ -216,7 +215,6 @@ proxies:
       headers:
         Host: vvipyogi.sgpremium.my.id
     udp: true
-
 proxy-groups:
   - name: Ikozu Premium All Bug
     type: select
@@ -241,6 +239,5 @@ proxy-groups:
       - "[VMess] paikozu video 204"
       - "[VMess] paikozu video quiz"
       - "[VMess] paikozu video tv"
-
 rules:
   - MATCH,Ikozu Premium All Bug
