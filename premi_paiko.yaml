@@ -271,7 +271,7 @@ proxy-groups:
       - "[VMess] paikozu 204"
       - "[VMess] paikozu seabank"
       - "[VMess] paikozu 172...49"
-      - - name: "[VMess] paikozu 104...61"
+      - "[VMess] paikozu 104...61"
       - BEST-PING
       - DIRECT
   - name: Ikozu Premium vidio
@@ -291,7 +291,10 @@ proxy-groups:
       - "[VMess] paikozu cf"
       - "[VMess] paikozu 55"
       - "[VMess] paikozu 204"
+      - "[VMess] paikozu seabank"
+      - "[VMess] paikozu 172...49"
+      - "[VMess] paikozu 104...61"
       - "[VMess] paikozu video quiz"
       - "[VMess] paikozu video tv"
 rules:
-  - MATCH,Ikozu Premium All Bug
+  - MATCH,Ikozu Premium xcp,Ikozu Premium vidio
