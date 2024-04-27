@@ -124,6 +124,7 @@ dns:
     - "*.ffxiv.com"
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
+
 proxies:
   - name: "[VMess] paikozu cvs-deo"
     server: cvs-deo.shopeemobile.com
@@ -170,6 +171,21 @@ proxies:
       headers:
         Host: vvipyogi.sgpremium.my.id
     udp: true
+   - name: "[VMess] paikozu video 204"
+    server: 104.18.62.204
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
   - name: "[VMess] paikozu video quiz"
     server: quiz.int.vidio.com
     port: 80
@@ -200,6 +216,7 @@ proxies:
       headers:
         Host: vvipyogi.sgpremium.my.id
     udp: true
+
 proxy-groups:
   - name: Ikozu Premium All Bug
     type: select
@@ -207,7 +224,23 @@ proxy-groups:
       - "[VMess] paikozu cvs-deo"
       - "[VMess] paikozu cf"
       - "[VMess] paikozu 55"
+      -"[VMess] paikozu video 204"
       - "[VMess] paikozu video quiz"
       - "[VMess] paikozu video tv"
+      - BEST-PING
+      - DIRECT
+  - name: BEST-PING
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "[VMess] paikozu cvs-deo"
+      - "[VMess] paikozu cf"
+      - "[VMess] paikozu 55"
+      -"[VMess] paikozu video 204"
+      - "[VMess] paikozu video quiz"
+      - "[VMess] paikozu video tv"
+
 rules:
   - MATCH,Ikozu Premium All Bug
