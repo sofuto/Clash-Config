@@ -156,6 +156,21 @@ proxies:
       headers:
         Host: vvipyogi.sgpremium.my.id
     udp: true
+  - name: "[VMess] paikozu seabank"
+    server: www.belipropertiseabank.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
   - name: "[VMess] paikozu 55"
     server: 104.18.56.55
     port: 80
@@ -173,6 +188,36 @@ proxies:
     udp: true
   - name: "[VMess] paikozu 204"
     server: 104.18.62.204
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu 172...49"
+    server: 172.67.196.49
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu 104...61"
+    server: 104.21.52.61
     port: 80
     type: vmess
     uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
@@ -217,13 +262,21 @@ proxies:
         Host: vvipyogi.sgpremium.my.id
     udp: true
 proxy-groups:
-  - name: Ikozu Premium All Bug
+  - name: Ikozu Premium xcp
     type: select
     proxies:
       - "[VMess] paikozu cvs-deo"
       - "[VMess] paikozu cf"
       - "[VMess] paikozu 55"
       - "[VMess] paikozu 204"
+      - "[VMess] paikozu seabank"
+      - "[VMess] paikozu 172...49"
+      - - name: "[VMess] paikozu 104...61"
+      - BEST-PING
+      - DIRECT
+  - name: Ikozu Premium vidio
+    type: select
+    proxies:
       - "[VMess] paikozu video quiz"
       - "[VMess] paikozu video tv"
       - BEST-PING
