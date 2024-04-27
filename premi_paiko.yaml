@@ -185,7 +185,7 @@ proxies:
       headers:
         Host: vvipyogi.sgpremium.my.id
     udp: true
-  - name: "[VMess] paikozu video quiz"
+  - name: "[VMess] paikozu video tv"
     server: nontontv.vidio.com
     port: 80
     type: vmess
@@ -208,6 +208,6 @@ proxy-groups:
       - "[VMess] paikozu cf"
       - "[VMess] paikozu 55"
       - "[VMess] paikozu video quiz"
-      - "[VMess] paikozu video quiz"
+      - "[VMess] paikozu video tv"
 rules:
   - MATCH,Ikozu Premium All Bug
