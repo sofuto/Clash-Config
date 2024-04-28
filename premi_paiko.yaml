@@ -156,8 +156,8 @@ proxies:
       headers:
         Host: vvipyogi.sgpremium.my.id
     udp: true
-  - name: "[VMess] paikozu seabank"
-    server: www.belipropertiseabank.com
+  - name: "[VMess] paikozu vistaprint"
+    server: vistaprint.in
     port: 80
     type: vmess
     uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
@@ -171,6 +171,66 @@ proxies:
       headers:
         Host: vvipyogi.sgpremium.my.id
     udp: true
+  - name: "[VMess] paikozu industrydive"
+    server: industrydive.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu vrtgirlontherun"
+    server: vrtgirlontherun.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true   
+  - name: "[VMess] paikozu collagenforte"
+    server: collagenforte.fi
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true  
+  - name: "[VMess] paikozu fmcrtg"
+    server: fmcrtg-grants.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true        
   - name: "[VMess] paikozu 55"
     server: 104.18.56.55
     port: 80
@@ -216,8 +276,8 @@ proxies:
       headers:
         Host: vvipyogi.sgpremium.my.id
     udp: true
-  - name: "[VMess] paikozu ..32.56"
-    server: 104.18.32.56
+  - name: "[VMess] paikozu ..53.172"
+    server: 104.18.53.172
     port: 80
     type: vmess
     uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
@@ -231,8 +291,8 @@ proxies:
       headers:
         Host: vvipyogi.sgpremium.my.id
     udp: true
-  - name: "[VMess] paikozu 172...49"
-    server: 172.67.196.49
+  - name: "[VMess] paikozu ..29.244"
+    server: 104.18.29.244
     port: 80
     type: vmess
     uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
@@ -246,8 +306,23 @@ proxies:
       headers:
         Host: vvipyogi.sgpremium.my.id
     udp: true
-  - name: "[VMess] paikozu 104...61"
-    server: 104.21.52.61
+  - name: "[VMess] paikozu ..49.163"
+    server: 104.18.49.163
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu .61.93"
+    server: 104.18.61.93
     port: 80
     type: vmess
     uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
@@ -297,11 +372,19 @@ proxy-groups:
     proxies:
       - "[VMess] paikozu cvs-deo"
       - "[VMess] paikozu cf"
+      - "[VMess] paikozu vistaprint"
+      - "[VMess] paikozu industrydive"
+      - "[VMess] paikozu vrtgirlontherun"
+      - "[VMess] paikozu collagenforte"
+      - "[VMess] paikozu collagenforte"
+      - "[VMess] paikozu fmcrtg"
       - "[VMess] paikozu 55"
       - "[VMess] paikozu 204"
-      - "[VMess] paikozu seabank"
-      - "[VMess] paikozu 172...49"
-      - "[VMess] paikozu 104...61"
+      - "[VMess] paikozu ..32.57"
+      - "[VMess] paikozu ..53.172"
+      - "[VMess] paikozu ..29.244"
+      - "[VMess] paikozu ..49.163"
+      - "[VMess] paikozu .61.93"
       - BEST-PING
       - DIRECT
   - name: Ikozu Premium vidio
@@ -319,11 +402,19 @@ proxy-groups:
     proxies:
       - "[VMess] paikozu cvs-deo"
       - "[VMess] paikozu cf"
+      - "[VMess] paikozu vistaprint"
+      - "[VMess] paikozu industrydive"
+      - "[VMess] paikozu vrtgirlontherun"
+      - "[VMess] paikozu collagenforte"
+      - "[VMess] paikozu collagenforte"
+      - "[VMess] paikozu fmcrtg"
       - "[VMess] paikozu 55"
       - "[VMess] paikozu 204"
-      - "[VMess] paikozu seabank"
-      - "[VMess] paikozu 172...49"
-      - "[VMess] paikozu 104...61"
+      - "[VMess] paikozu ..32.57"
+      - "[VMess] paikozu ..53.172"
+      - "[VMess] paikozu ..29.244"
+      - "[VMess] paikozu ..49.163"
+      - "[VMess] paikozu .61.93"
       - "[VMess] paikozu video quiz"
       - "[VMess] paikozu video tv"
 rules:
