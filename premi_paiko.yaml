@@ -424,8 +424,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - BEST-PING vidio
-      - BEST-PING xcp
+      - Ikozu Premium xcp
+      - Ikozu Premium vidio
   - name: Ikozu Premium xcp
     type: select
     proxies:
