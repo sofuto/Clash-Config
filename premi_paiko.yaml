@@ -4,7 +4,7 @@ redir-port: 7892
 mixed-port: 7893
 tproxy-port: 7895
 ipv6: false
-mode: global
+mode: rule
 log-level: silent
 allow-lan: true
 external-controller: 0.0.0.0:9090
@@ -125,6 +125,293 @@ dns:
     - "*.mcdn.bilivideo.cn"
     - +.media.dssott.com
 
+proxies:
+  - name: "[VMess] paikozu cvs-deo"
+    server: cvs-deo.shopeemobile.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu cf"
+    server: cf.shopee.co.id.sea-sw.swiftserve.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu vistaprint"
+    server: vistaprint.in
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu industrydive"
+    server: industrydive.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu vrtgirlontherun"
+    server: vrtgirlontherun.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true   
+  - name: "[VMess] paikozu collagenforte"
+    server: collagenforte.fi
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true  
+  - name: "[VMess] paikozu fmcrtg"
+    server: fmcrtg-grants.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true        
+  - name: "[VMess] paikozu 55"
+    server: 104.18.56.55
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu 204"
+    server: 104.18.62.204
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu ..32.57"
+    server: 104.18.32.57
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu ..53.172"
+    server: 104.18.53.172
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu ..29.244"
+    server: 104.18.29.244
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu ..49.163"
+    server: 104.18.49.163
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu .61.93"
+    server: 104.18.61.93
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu yoast"
+    server: yoast.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu ..26.25"
+    server: 104.18.26.25
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu ..27.25"
+    server: 104.18.27.25
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu video quiz"
+    server: quiz.int.vidio.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu video tv"
+    server: nontontv.vidio.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+
 proxy-groups:
   - name: Paikozu
     type: select
@@ -137,285 +424,70 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - BEST-PING xcp 1
-      - BEST-PING xcp 2
-      - BEST-PING xcp 3
+      - BEST-PING vidio
+      - BEST-PING xcp
   - name: Ikozu Premium xcp
     type: select
     proxies:
       - BEST-PING xcp 1
       - BEST-PING xcp 2
       - BEST-PING xcp 3
+      - BEST-PING xcp 4
       - DIRECT
   - name: Ikozu Premium vidio
     type: select
     proxies:
-      - BEST-PING Vidio
+      - BEST-PING vidio
       - DIRECT
-  - name: BEST-PING Vidio
+  - name: BEST-PING vidio
     type: url-test
     url: http://hi.bonds.id/ping
     interval: 300
     tolerance: 50
     proxies:
-      - name: "[VMess] paikozu video quiz"
-        server: quiz.int.vidio.com
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true
-      - name: "[VMess] paikozu video tv"
-        server: nontontv.vidio.com
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true
+      - "[VMess] paikozu video quiz"
+      - "[VMess] paikozu video tv"
   - name: BEST-PING xcp 1
     type: url-test
     url: http://hi.bonds.id/ping
     interval: 300
     tolerance: 50
     proxies:
-      - name: "[VMess] paikozu cvs-deo"
-        server: cvs-deo.shopeemobile.com
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true
-      - name: "[VMess] paikozu cf"
-        server: cf.shopee.co.id.sea-sw.swiftserve.com
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true
-      - name: "[VMess] paikozu 55"
-        server: 104.18.56.55
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true
-      - name: "[VMess] paikozu 204"
-        server: 104.18.62.204
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true
+      - "[VMess] paikozu cvs-deo"
+      - "[VMess] paikozu cf"
+      - "[VMess] paikozu 55"
+      - "[VMess] paikozu 204"
   - name: BEST-PING xcp 2
     type: url-test
     url: http://hi.bonds.id/ping
     interval: 300
     tolerance: 50
     proxies:
-      - name: "[VMess] paikozu vistaprint"
-        server: vistaprint.in
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true
-      - name: "[VMess] paikozu industrydive"
-        server: industrydive.com
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true
-      - name: "[VMess] paikozu vrtgirlontherun"
-        server: vrtgirlontherun.com
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true   
-      - name: "[VMess] paikozu collagenforte"
-        server: collagenforte.fi
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true  
-      - name: "[VMess] paikozu fmcrtg"
-        server: fmcrtg-grants.com
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true        
+      - "[VMess] paikozu vistaprint"
+      - "[VMess] paikozu industrydive"
+      - "[VMess] paikozu vrtgirlontherun"
+      - "[VMess] paikozu collagenforte"
+      - "[VMess] paikozu fmcrtg"
   - name: BEST-PING xcp 3
     type: url-test
     url: http://hi.bonds.id/ping
     interval: 300
     tolerance: 50
     proxies:
-      - name: "[VMess] paikozu ..32.57"
-        server: 104.18.32.57
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true
-      - name: "[VMess] paikozu ..53.172"
-        server: 104.18.53.172
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true
-      - name: "[VMess] paikozu ..29.244"
-        server: 104.18.29.244
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true
-      - name: "[VMess] paikozu ..49.163"
-        server: 104.18.49.163
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true
-      - name: "[VMess] paikozu .61.93"
-        server: 104.18.61.93
-        port: 80
-        type: vmess
-        uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
-        alterId: 0
-        cipher: auto
-        tls: false
-        skip-cert-verify: true
-        network: ws
-        ws-opts:
-          path: /vmess
-          headers:
-            Host: vvipyogi.sgpremium.my.id
-        udp: true
+      - "[VMess] paikozu ..32.57"
+      - "[VMess] paikozu ..53.172"
+      - "[VMess] paikozu ..29.244"
+      - "[VMess] paikozu ..49.163"
+      - "[VMess] paikozu .61.93"
+  - name: BEST-PING xcp 4
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "[VMess] paikozu yoast"
+      - "[VMess] paikozu ..26.25"
+      - "[VMess] paikozu ..27.25"
 
 rules:
   - MATCH,Paikozu,Ikozu Premium xcp,Ikozu Premium vidio
