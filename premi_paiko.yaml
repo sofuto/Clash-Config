@@ -366,6 +366,7 @@ proxies:
       headers:
         Host: vvipyogi.sgpremium.my.id
     udp: true
+    
 proxy-groups:
   - name: Paikozu
     type: select
@@ -416,26 +417,26 @@ proxy-groups:
       - "[VMess] paikozu video quiz"
       - "[VMess] paikozu video tv"
   - name: BEST-PING xcp
-      type: url-test
-      url: http://hi.bonds.id/ping
-      interval: 300
-      tolerance: 50
-      proxies:
-        - "[VMess] paikozu cvs-deo"
-        - "[VMess] paikozu cf"
-        - "[VMess] paikozu vistaprint"
-        - "[VMess] paikozu industrydive"
-        - "[VMess] paikozu vrtgirlontherun"
-        - "[VMess] paikozu collagenforte"
-        - "[VMess] paikozu collagenforte"
-        - "[VMess] paikozu fmcrtg"
-        - "[VMess] paikozu 55"
-        - "[VMess] paikozu 204"
-        - "[VMess] paikozu ..32.57"
-        - "[VMess] paikozu ..53.172"
-        - "[VMess] paikozu ..29.244"
-        - "[VMess] paikozu ..49.163"
-        - "[VMess] paikozu .61.93"
+    type: url-test
+    url: http://hi.bonds.id/ping
+    interval: 300
+    tolerance: 50
+    proxies:
+      - "[VMess] paikozu cvs-deo"
+      - "[VMess] paikozu cf"
+      - "[VMess] paikozu vistaprint"
+      - "[VMess] paikozu industrydive"
+      - "[VMess] paikozu vrtgirlontherun"
+      - "[VMess] paikozu collagenforte"
+      - "[VMess] paikozu collagenforte"
+      - "[VMess] paikozu fmcrtg"
+      - "[VMess] paikozu 55"
+      - "[VMess] paikozu 204"
+      - "[VMess] paikozu ..32.57"
+      - "[VMess] paikozu ..53.172"
+      - "[VMess] paikozu ..29.244"
+      - "[VMess] paikozu ..49.163"
+      - "[VMess] paikozu .61.93"
 
 rules:
   - MATCH,Paikozu,Ikozu Premium xcp,Ikozu Premium vidio
