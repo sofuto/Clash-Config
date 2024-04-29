@@ -265,11 +265,9 @@ proxy-groups:
       - "[VMess] paikozu 55"
       - "[VMess] paikozu 204"
   - name: tester-bug
-    type: url-test
-    url: http://hi.bonds.id/ping
-    interval: 300
-    tolerance: 50
+    type: select
     proxies:
-      - "[VMess] paikozu tester
+      - "[VMess] paikozu tester"
+      
 rules:
   - MATCH,Paikozu
