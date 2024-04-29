@@ -171,6 +171,21 @@ proxies:
       headers:
         Host: vvipyogi.sgpremium.my.id
     udp: true
+  - name: "[VMess] paikozu 56"
+    server: 104.18.56.56
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
   - name: "[VMess] paikozu 204"
     server: 104.18.62.204
     port: 80
@@ -203,6 +218,21 @@ proxies:
     udp: true
   - name: "[VMess] paikozu video tv"
     server: nontontv.vidio.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu video img"
+    server: img.email3.vidio.com
     port: 80
     type: vmess
     uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
@@ -259,6 +289,7 @@ proxy-groups:
     proxies:
       - "[VMess] paikozu video quiz"
       - "[VMess] paikozu video tv"
+      - "[VMess] paikozu video img"
   - name: BEST-PING xcp 1
     type: url-test
     url: http://hi.bonds.id/ping
@@ -268,6 +299,7 @@ proxy-groups:
       - "[VMess] paikozu cvs-deo"
       - "[VMess] paikozu cf"
       - "[VMess] paikozu 55"
+      - "[VMess] paikozu 56"
       - "[VMess] paikozu 204"
 
 rules:
