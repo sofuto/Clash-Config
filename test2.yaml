@@ -227,7 +227,7 @@ proxies:
       headers:
         Host: vvipyogi.sgpremium.my.id
     udp: true
-      - name: "[VMess] paikozu xcp_7"
+  - name: "[VMess] paikozu xcp_7"
     server: *xcp_7
     port: 80
     type: vmess
