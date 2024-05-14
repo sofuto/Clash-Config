@@ -1,0 +1,165 @@
+mixed-port: 10809
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: true
+
+dns:
+  enable: true
+  listen: 127.0.0.1:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
+bug:
+  - &vidio quiz.staging.vidio.com
+  - &vision 104.18.225.52
+line: &line
+  type: select
+  proxies:
+    - Select
+    - Auto
+    - Load Balance
+    - Iklan
+proxy: &proxy
+  proxies:
+      - "[VMess] paikozu cvs-deo"
+      - "[VMess] paikozu cf"
+      - "[VMess] paikozu 55"
+      - "[VMess] paikozu 56"
+      - "[VMess] paikozu 204"
+select: &select
+  type: select
+  <<: *proxy
+auto: &auto
+  type: url-test
+  <<: *proxy
+  url: 'https://clients3.google.com'
+  interval: 300
+lb: &lb
+  type: load-balance
+  <<: *proxy
+  url: 'https://clients3.google.com'
+  interval: 300
+  strategy: consistent-hashing # atau round-robin
+proxies:
+  - name: "[VMess] paikozu cvs-deo"
+    server: cvs-deo.shopeemobile.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu cf"
+    server: cf.shopee.co.id.sea-sw.swiftserve.com
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true  
+  - name: "[VMess] paikozu 55"
+    server: 104.18.56.55
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu 56"
+    server: 104.18.56.56
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu 204"
+    server: 104.18.62.204
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+  - name: "[VMess] paikozu tester"
+    server: websocket.ocha.staging.shopee.co.id
+    port: 80
+    type: vmess
+    uuid: a32199b1-9237-4ca5-ab6d-63dd0942cbde
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: vvipyogi.sgpremium.my.id
+    udp: true
+
+proxy-groups:
+  - name: Proxy
+    <<: *line
+  - name: Iklan
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: Select
+    <<: *select
+  - name: Auto
+    <<: *auto
+  - name: Load Balance
+    <<: *lb
+
+rule-providers:
+  adblock:
+    type: http
+    behavior: classical
+    path: ./adblock.yaml
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical_No_Resolve.yaml"
+    interval: 600
+
+rules:
+  - RULE-SET,adblock,Iklan
+  - MATCH,Proxy
