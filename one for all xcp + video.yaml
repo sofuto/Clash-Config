@@ -55,13 +55,14 @@ proxy-providers:
       interval: 300
 proxy-groups:
 - name: Internet
-  type: fallback
+  type: url-test
+  url: http://hi.bonds.id/ping
+  interval: 300
+  tolerance: 50
   disable-udp: false
   use:
   - XCP
   - video
-  url: http://www.gstatic.com/generate_204
-  interval: '30'
 - name: Ads-18+
   type: select
   disable-udp: false
