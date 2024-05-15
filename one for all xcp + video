@@ -59,6 +59,7 @@ proxy-groups:
   disable-udp: false
   use:
   - XCP
+  - video
   url: http://www.gstatic.com/generate_204
   interval: '30'
 - name: Ads-18+
@@ -84,6 +85,7 @@ proxy-groups:
   disable-udp: true
   use:
   - XCP
+  - video
 port: 7890
 socks-port: 7891
 redir-port: 7892
