@@ -37,14 +37,6 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Shopee/Shopee.yaml"
     interval: 600
 proxy-providers:
-  XCP:
-    type: http
-    path: ./akun.yaml
-    url: "https://raw.githubusercontent.com/sofuto/Clash_Config_v2/main/proxy/akun.yaml"
-    health-check:
-      enable: true
-      url: https://cp.cloudflare.com/generate_204
-      interval: 300
   video:
     type: http
     path: ./video.yaml
@@ -58,7 +50,6 @@ proxy-groups:
   type: fallback
   disable-udp: false
   use:
-  - XCP
   - video
   url: http://www.gstatic.com/generate_204
   interval: '30'
@@ -84,7 +75,6 @@ proxy-groups:
   type: select
   disable-udp: true
   use:
-  - XCP
   - video
 port: 7890
 socks-port: 7891
