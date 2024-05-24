@@ -15,14 +15,6 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 bug:
-  - &xcp_1 cvs-deo.shopeemobile.com
-  - &xcp_2 cf.shopee.co.id.sea-sw.swiftserve.com
-  - &xcp_3 104.18.56.55
-  - &xcp_4 104.18.56.56
-  - &xcp_5 104.18.62.204
-  - &xcp_6 1crjdroj.rg.sgw.shopeemobile.com
-  - &xcp_7 cf.shopee.co.id.cloudscdn.net
-  - &xcp_8 route.idc.cf.shopee.co.id
   - &video_1 quiz.staging.vidio.com
   - &video_2 img.email3.vidio.com
   - &video_3 quiz.vidio.com
