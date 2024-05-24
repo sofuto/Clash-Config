@@ -53,53 +53,71 @@ lb: &lb
   strategy: consistent-hashing # atau round-robin
 
 proxies:
-  - name: "[VMess] Free4You"
-    server: *video_1
+proxies:
+  - name: "[VMess] sshocean-ikocok-ws"
+    server: quiz.staging.vidio.com
     port: 80
     type: vmess
-    uuid: b344cca2-b7fe-41eb-a10e-3e810a6f952f
+    uuid: f17e67aa-0440-4df9-9a21-7dfe0b233bc3
     alterId: 0
     cipher: auto
-    tls: false
+    tls: true
     skip-cert-verify: true
-    servername: lukistore.sabdo.my.id
+    servername: id2.v2vmess.site
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: lukistore.sabdo.my.id
+        Host: id2.v2vmess.site
     udp: true
-  - name: "[VMess] Free4You 2"
-    server: *video_1
-    port: 80
+  - name: "[VMess] ikocok-vpnjantit.com"
+    server: quiz.staging.vidio.com
+    port: 10000
     type: vmess
-    uuid: b344cca2-b7fe-41eb-a10e-3e810a6f952f
+    uuid: b1dbb2ec-1a18-11ef-b80c-00163e03cffa
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: lukistore.sabdo.my.id
+    servername: indo2.vpnjantit.com
     network: ws
     ws-opts:
-      path: /vmess
+      path: /vpnjantit
       headers:
-        Host: lukistore.sabdo.my.id
+        Host: indo2.vpnjantit.com
     udp: true
-  - name: "[VMess] sasuke"
-    server: *video_1
+  - name: "[VMess] Vmess Singapore HE-1 Limit 2024-06-01"
+    server: quiz.staging.vidio.com
     port: 80
     type: vmess
-    uuid: c2703a80-52c2-4546-88b6-5be41ad93110
+    uuid: 21d6f760-1a19-11ef-b336-205c6d5f5d78
     alterId: 0
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: azure-jepang.sshvip.site
+    servername: sg-1.hihu.net
+    network: ws
+    ws-opts:
+      path: /wufjvyi8
+      headers:
+        Host: sg-1.hihu.net
+    udp: true
+proxies:
+  - name: "[VMess] sshocean-ikozu-ws"
+    server: quiz.staging.vidio.com
+    port: 443
+    type: vmess
+    uuid: 41e05fe4-bd62-43fe-8194-382be9771cb3
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg3.v2vmess.site
     network: ws
     ws-opts:
       path: /vmess
       headers:
-        Host: azure-jepang.sshvip.site
+        Host: sg3.v2vmess.site
     udp: true
 
 proxy-groups:
