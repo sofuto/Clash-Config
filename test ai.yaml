@@ -31,10 +31,10 @@ line: &line
 
 proxy: &proxy
   proxies:
-    - "[VMess] Free4You"
-    - "[VMess] Free4You 2"
-    - "[VMess] sasuke"
-
+    - "[VMess] sshocean-ikocok-ws"
+    - "[VMess] ikocok-vpnjantit.com"
+    - "[VMess] Vmess Singapore HE-1 Limit 2024-06-01"
+    - "[VMess] sshocean-ikozu-ws"
 select: &select
   type: select
   <<: *proxy
@@ -52,7 +52,6 @@ lb: &lb
   interval: 300
   strategy: consistent-hashing # atau round-robin
 
-proxies:
 proxies:
   - name: "[VMess] sshocean-ikocok-ws"
     server: quiz.staging.vidio.com
@@ -102,7 +101,6 @@ proxies:
       headers:
         Host: sg-1.hihu.net
     udp: true
-proxies:
   - name: "[VMess] sshocean-ikozu-ws"
     server: quiz.staging.vidio.com
     port: 443
