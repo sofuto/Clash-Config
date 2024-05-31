@@ -1,0 +1,68 @@
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+bind-address: "*"
+ipv6: false
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7894
+  fallback-filter:
+    geoip: false
+    ipcidr:
+    - 240.0.0.0/4
+  nameserver:
+    - https://puredns.org/dns-query
+    - tls://puredns.org:853
+  fallback:
+    - tcp://108.137.44.39
+    - tcp://108.137.44.9
+    - 108.137.44.39
+    - 108.137.44.9
+tun:
+  enable: true
+  stack: system 
+  macOS-auto-route: true
+  macOS-auto-detect-interface: true
+  dns-hijack:
+    - tcp://108.137.44.39:53
+experimental:
+  interface-name: en0
+
+proxies:
+  - {name: R80:Vmess Singapore HE-1 Limit 2024-06-07, server: quiz.staging.vidio.com, port: 80, type: vmess, uuid: 60306370-1f34-11ef-b138-205c6d5f5d78, sni: sg-1.hihu.net, alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /hyjkvm27, headers: {Host: sg-1.hihu.net}}}
+  - {name: sshocean-sg3ikozu-ws, server: quiz.staging.vidio.com, port: 443, type: vmess, uuid: 74b47e49-617c-4b3b-9813-cc0b16fafe0f, sni: sg3.v2vmess.site, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sg3.v2vmess.site}}}
+  - {name: sshocean-id2ikozu-ws, server: quiz.staging.vidio.com, port: 443, type: vmess, uuid: f06ef832-3411-409c-8eb3-8c4049a47dcb, sni: id2.v2vmess.site, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: id2.v2vmess.site}}}
+  - {name: sshocean-ca1ikozu-ws, server: quiz.staging.vidio.com, port: 443, type: vmess, uuid: 78f91489-0b31-4535-bf39-88ca44048dda, sni: ca1.v2vmess.site, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ca1.v2vmess.site}}}
+  - {name: sshocean-hkikozu-ws, server: quiz.staging.vidio.com, port: 443, type: vmess, uuid: 4256770a-c7ed-439f-a698-6c93b4ec0a89, sni: hk1.v2vmess.site, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: hk1.v2vmess.site}}}
+  - {name: sshocean-ca2ikozu-ws, server: quiz.staging.vidio.com, port: 443, type: vmess, uuid: 65de1b32-4145-48c1-aed5-8334f2a0cc9d, sni: ca2.v2vmess.site, alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ca2.v2vmess.site}}}
+  - {name: SG+VMESS-WS NTLS(2024-06-07), server: sg3.socifiles.com, port: 80, type: vmess, uuid: 6512f340-1f34-11ef-9881-1239d0255272, sni: , alterId: 0, cipher: auto, tls: , skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /vmws, headers: {Host: }}}
+  - {name: quiz.staging.vidio.com 93, server: quiz.staging.vidio.com, port: 443, udp: true, type: trojan, password: 98a3c110-1f35-11ef-9c17-1239d0255272, sni: sg3-trojan.bonds.id&type=ws&host=sg3-trojan.bonds.id&path=%2Fhowdy, skip-cert-verify: true}
+  - {name: quiz.staging.vidio.com 36, server: quiz.staging.vidio.com, port: 443, udp: true, type: trojan, password: 9f831e10-1f35-11ef-aaad-1239d0255272, sni: sg2-trojan.bonds.id&type=ws&host=sg2-trojan.bonds.id&path=%2Fhowdy, skip-cert-verify: true}
+
+proxy-groups:
+  - name: sshkit-generator
+    type: load-balance
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 300
+    strategy: consistent-hashing
+    proxies:
+      - R80:Vmess Singapore HE-1 Limit 2024-06-07
+      - sshocean-sg3ikozu-ws
+      - sshocean-id2ikozu-ws
+      - sshocean-ca1ikozu-ws
+      - sshocean-hkikozu-ws
+      - sshocean-ca2ikozu-ws
+      - SG+VMESS-WS NTLS(2024-06-07)
+      - quiz.staging.vidio.com 93
+      - quiz.staging.vidio.com 36
+
+rules:
+ - MATCH,sshkit-generator
