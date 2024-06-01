@@ -42,7 +42,7 @@ proxy: &proxy
     - "UWU OWO UMU_15"
     - "UWU OWO UMU_16"
     - "UWU OWO UMU_17"
-    - "UWU OWO UMU_18"
+    - "UWU OWO UMU_19"
     - "UWU OWO UMU_20"
     - "UWU OWO UMU_21"
     - "UWU OWO UMU_22"
@@ -321,18 +321,18 @@ proxies:
       Host: "telegram-vpnhttpinjectorfree-07.kefeh44777.workers.dev"
   udp: true
 
-- name: "UWU OWO UMU_18"
+- name: "UWU OWO UMU_19"
   server: "quiz.staging.vidio.com"
   port: 80
   type: "vless"
-  uuid: "77a571fb-4fd2-4b37-8254-1b7d9728bb5c"
-  servername: "telegram-vpnhttpinjectorfree-010.watiger723.workers.dev"
+  uuid: "77a571fb-4fd2-4b37-8256-1b7d9728bb5c"
+  servername: "telegram-vpnhttpinjectorfree-013.elenore55.workers.dev"
   flow: ""
   network: "ws"
   ws-opts:
     path: "/?ed=2048"
     headers:
-      Host: "telegram-vpnhttpinjectorfree-010.watiger723.workers.dev"
+      Host: "telegram-vpnhttpinjectorfree-013.elenore55.workers.dev"
   udp: true
 
 - name: "UWU OWO UMU_20"
