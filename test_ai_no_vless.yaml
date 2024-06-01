@@ -1,0 +1,239 @@
+mixed-port: 10809
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: true
+
+dns:
+  enable: true
+  listen: 127.0.0.1:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
+
+line: &line
+  type: select
+  proxies:
+    - Select
+    - Auto
+    - Load Balance
+    - Iklan
+
+proxy: &proxy
+  proxies:
+    - "UWU OWO UMU_1"
+    - "UWU OWO UMU_9"
+    - "UWU OWO UMU_10"
+    - "UWU OWO UMU_11"
+    - "UWU OWO UMU_12"
+    - "UWU OWO UMU_13"
+    - "UWU OWO UMU_20"
+    - "UWU OWO UMU_21"
+    - "UWU OWO UMU_22"
+    - "UWU OWO UMU_23"
+    - "UWU OWO UMU_24"
+
+select: &select
+  type: select
+  <<: *proxy
+
+auto: &auto
+  type: url-test
+  <<: *proxy
+  url: 'https://clients3.google.com'
+  interval: 300
+
+lb: &lb
+  type: load-balance
+  <<: *proxy
+  url: 'https://clients3.google.com'
+  interval: 300
+  strategy: consistent-hashing # atau round-robin
+
+proxies:
+- name: "UWU OWO UMU_1"
+  server: "quiz.staging.vidio.com"
+  port: 2052
+  type: "vmess"
+  uuid: "ccd92698-4499-472d-a06f-f90e7e89ba4f"
+  alterId: 0
+  cipher: "auto"
+  tls: false
+  skip-cert-verify: true
+  servername: ""
+  network: "ws"
+  ws-opts:
+    path: "/video/3YKfzGw4"
+    headers:
+      Host: "rpmlybgzsg2.yofnhkfc.xyz"
+  udp: true
+- name: "UWU OWO UMU_9"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "trojan"
+  password: "f0eb8c92ce8946aaba856569cff1a16b"
+  sni: "avianrecruit.com"
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/6b777a91"
+    headers:
+      Host: "avianrecruit.com"
+  udp: true
+- name: "UWU OWO UMU_10"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "trojan"
+  password: "telegram-VPNHTTPIinjectorfree"
+  sni: "telegram-vpnhttpinjectorfree-014.elenore55.workers.dev"
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-014.elenore55.workers.dev"
+  udp: true
+- name: "UWU OWO UMU_11"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "trojan"
+  password: "telegram-VPNHTTPIinjectorfree"
+  sni: "telegram-vpnhttpinjectorfree-011.watiger723.workers.dev"
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-011.watiger723.workers.dev"
+  udp: true
+- name: "UWU OWO UMU_12"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "trojan"
+  password: "telegram-VPNHTTPIinjectorfree"
+  sni: "telegram-vpnhttpinjectorfree-08.kefeh44777.workers.dev"
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-08.kefeh44777.workers.dev"
+  udp: true
+- name: "UWU OWO UMU_13"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "trojan"
+  password: "telegram-VPNHTTPIinjectorfree"
+  sni: "telegram-vpnhttpinjectorfree-05.wirey75238.workers.dev"
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-05.wirey75238.workers.dev"
+  udp: true
+- name: "UWU OWO UMU_20"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vmess"
+  uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
+  alterId: 0
+  cipher: "auto"
+  tls: false
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/xmivideo.cfd:443/linkws"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-03.netago4239.workers.dev"
+  udp: true
+- name: "UWU OWO UMU_21"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vmess"
+  uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
+  alterId: 0
+  cipher: "auto"
+  tls: false
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/xmivideo.cfd:443/linkws"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-06.wirey75238.workers.dev"
+  udp: true
+- name: "UWU OWO UMU_22"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vmess"
+  uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
+  alterId: 0
+  cipher: "auto"
+  tls: false
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/xmivideo.cfd:443/linkws"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-09.kefeh44777.workers.dev"
+  udp: true
+- name: "UWU OWO UMU_23"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vmess"
+  uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
+  alterId: 0
+  cipher: "auto"
+  tls: false
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/xmivideo.cfd:443/linkws"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-012.watiger723.workers.dev"
+  udp: true
+- name: "UWU OWO UMU_24"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vmess"
+  uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
+  alterId: 0
+  cipher: "auto"
+  tls: false
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/xmivideo.cfd:443/linkws"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-015.elenore55.workers.dev"
+  udp: true
+proxy-groups:
+  - name: Proxy
+    <<: *line
+  - name: Iklan
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: Select
+    <<: *select
+  - name: Auto
+    <<: *auto
+  - name: Load Balance
+    <<: *lb
+
+rule-providers:
+  adblock:
+    type: http
+    behavior: classical
+    path: ./adblock.yaml
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical_No_Resolve.yaml"
+    interval: 600
+
+rules:
+  - RULE-SET,adblock,Iklan
+  - MATCH,Proxy
