@@ -342,6 +342,7 @@ proxies:
   port: 80
   type: "vless"
   uuid: "77a571fb-4fd2-4b37-8256-1b7d9728bb5c"
+    cipher: "auto"
   servername: "telegram-vpnhttpinjectorfree-013.elenore55.workers.dev"
   flow: ""
   network: "ws"
@@ -357,6 +358,7 @@ proxies:
   type: "vmess"
   uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
   alterId: 0
+  cipher: "auto"
   tls: false
   skip-cert-verify: true
   network: "ws"
@@ -372,6 +374,7 @@ proxies:
   type: "vmess"
   uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
   alterId: 0
+  cipher: "auto"
   tls: false
   skip-cert-verify: true
   network: "ws"
@@ -387,6 +390,7 @@ proxies:
   type: "vmess"
   uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
   alterId: 0
+  cipher: "auto"
   tls: false
   skip-cert-verify: true
   network: "ws"
@@ -402,6 +406,7 @@ proxies:
   type: "vmess"
   uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
   alterId: 0
+  cipher: "auto"
   tls: false
   skip-cert-verify: true
   network: "ws"
@@ -417,6 +422,7 @@ proxies:
   type: "vmess"
   uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
   alterId: 0
+  cipher: "auto"
   tls: false
   skip-cert-verify: true
   network: "ws"
