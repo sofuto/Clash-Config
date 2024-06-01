@@ -50,9 +50,8 @@ lb: &lb
   strategy: consistent-hashing # atau round-robin
 
 proxies:
-
 - name: "R80:Vmess Singapore HE-1 Limit 2024-06-07"
-  server: quiz.staging.vidio.com
+  server: quiz.vidio.com
   port: 80
   type: vmess
   uuid: 60306370-1f34-11ef-b138-205c6d5f5d78
@@ -60,7 +59,6 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: true
-  servername: sg-1.hihu.net
   network: ws
   ws-opts:
     path: /hyjkvm27
@@ -68,15 +66,14 @@ proxies:
       Host: sg-1.hihu.net
 
 - name: "sshocean-sg3ikozu-ws"
-  server: quiz.staging.vidio.com
-  port: 443
+  server: quiz.vidio.com
+  port: 80
   type: vmess
   uuid: 74b47e49-617c-4b3b-9813-cc0b16fafe0f
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: sg3.v2vmess.site
   network: ws
   ws-opts:
     path: /vmess
@@ -84,15 +81,14 @@ proxies:
       Host: sg3.v2vmess.site
 
 - name: "sshocean-id2ikozu-ws"
-  server: quiz.staging.vidio.com
-  port: 443
+  server: quiz.vidio.com
+  port: 80
   type: vmess
   uuid: f06ef832-3411-409c-8eb3-8c4049a47dcb
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: id2.v2vmess.site
   network: ws
   ws-opts:
     path: /vmess
@@ -100,15 +96,14 @@ proxies:
       Host: id2.v2vmess.site
 
 - name: "sshocean-ca1ikozu-ws"
-  server: quiz.staging.vidio.com
-  port: 443
+  server: quiz.vidio.com
+  port: 80
   type: vmess
   uuid: 78f91489-0b31-4535-bf39-88ca44048dda
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: ca1.v2vmess.site
   network: ws
   ws-opts:
     path: /vmess
@@ -116,15 +111,14 @@ proxies:
       Host: ca1.v2vmess.site
 
 - name: "sshocean-hkikozu-ws"
-  server: quiz.staging.vidio.com
-  port: 443
+  server: quiz.vidio.com
+  port: 80
   type: vmess
   uuid: 4256770a-c7ed-439f-a698-6c93b4ec0a89
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: hk1.v2vmess.site
   network: ws
   ws-opts:
     path: /vmess
@@ -132,15 +126,14 @@ proxies:
       Host: hk1.v2vmess.site
 
 - name: "sshocean-ca2ikozu-ws"
-  server: quiz.staging.vidio.com
-  port: 443
+  server: quiz.vidio.com
+  port: 80
   type: vmess
   uuid: 65de1b32-4145-48c1-aed5-8334f2a0cc9d
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-  servername: ca2.v2vmess.site
   network: ws
   ws-opts:
     path: /vmess
