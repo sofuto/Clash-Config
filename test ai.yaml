@@ -84,7 +84,6 @@ proxies:
     headers:
       Host: "rpmlybgzsg2.yofnhkfc.xyz"
   udp: true
-
 - name: "UWU OWO UMU_2"
   server: "quiz.staging.vidio.com"
   port: 2096
@@ -99,7 +98,6 @@ proxies:
     headers:
       Host: "VPnerOr.sajAdHaDaDI.WEbSITe"
   udp: true
-
 - name: "UWU OWO UMU_3"
   server: "quiz.staging.vidio.com"
   port: 443
@@ -114,7 +112,6 @@ proxies:
     headers:
       Host: "00e463Dc.beSTVPn-4xi.PAgES.dEv"
   udp: true
-
 - name: "UWU OWO UMU_4"
   server: "quiz.staging.vidio.com"
   port: 8443
@@ -129,7 +126,6 @@ proxies:
     headers:
       Host: "pardazeshvpn-tg27.pages.dev"
   udp: true
-
 - name: "UWU OWO UMU_5"
   server: "quiz.staging.vidio.com"
   port: 443
@@ -145,7 +141,6 @@ proxies:
       Host: "v2ray1ng.pages.dev"
   client-fingerprint: "randomized"
   udp: true
-
 - name: "UWU OWO UMU_6"
   server: "quiz.staging.vidio.com"
   port: 443
@@ -161,7 +156,6 @@ proxies:
       Host: "t-netplus-4vx.pages.dev"
   client-fingerprint: "random"
   udp: true
-
 - name: "UWU OWO UMU_7"
   server: "quiz.staging.vidio.com"
   port: 443
@@ -196,7 +190,6 @@ proxies:
     - "http/1.1"
   client-fingerprint: "randomized"
   udp: true
-
 - name: "UWU OWO UMU_9"
   server: "quiz.staging.vidio.com"
   port: 443
@@ -210,7 +203,6 @@ proxies:
     headers:
       Host: "avianrecruit.com"
   udp: true
-
 - name: "UWU OWO UMU_10"
   server: "quiz.staging.vidio.com"
   port: 443
@@ -237,7 +229,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-011.watiger723.workers.dev"
   udp: true
-
 - name: "UWU OWO UMU_12"
   server: "quiz.staging.vidio.com"
   port: 443
@@ -251,7 +242,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-08.kefeh44777.workers.dev"
   udp: true
-
 - name: "UWU OWO UMU_13"
   server: "quiz.staging.vidio.com"
   port: 443
@@ -265,7 +255,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-05.wirey75238.workers.dev"
   udp: true
-
 - name: "UWU OWO UMU_14"
   server: "quiz.staging.vidio.com"
   port: 443
@@ -279,7 +268,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-02.netago4239.workers.dev"
   udp: true
-
 - name: "UWU OWO UMU_15"
   server: "quiz.staging.vidio.com"
   port: 80
@@ -293,7 +281,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-01.netago4239.workers.dev"
   udp: true
-
 - name: "UWU OWO UMU_16"
   server: "quiz.staging.vidio.com"
   port: 80
@@ -307,7 +294,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-04.wirey75238.workers.dev"
   udp: true
-
 - name: "UWU OWO UMU_17"
   server: "quiz.staging.vidio.com"
   port: 80
@@ -321,7 +307,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-07.kefeh44777.workers.dev"
   udp: true
-
 - name: "UWU OWO UMU_18"
   server: "quiz.staging.vidio.com"
   port: 80
@@ -336,7 +321,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-010.watiger723.workers.dev"
   udp: true
-
 - name: "UWU OWO UMU_19"
   server: "quiz.staging.vidio.com"
   port: 80
@@ -351,7 +335,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-013.elenore55.workers.dev"
   udp: true
-
 - name: "UWU OWO UMU_20"
   server: "quiz.staging.vidio.com"
   port: 80
@@ -367,7 +350,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-03.netago4239.workers.dev"
   udp: true
-
 - name: "UWU OWO UMU_21"
   server: "quiz.staging.vidio.com"
   port: 80
@@ -383,7 +365,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-06.wirey75238.workers.dev"
   udp: true
-
 - name: "UWU OWO UMU_22"
   server: "quiz.staging.vidio.com"
   port: 80
@@ -399,7 +380,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-09.kefeh44777.workers.dev"
   udp: true
-
 - name: "UWU OWO UMU_23"
   server: "quiz.staging.vidio.com"
   port: 80
@@ -415,7 +395,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-012.watiger723.workers.dev"
   udp: true
-
 - name: "UWU OWO UMU_24"
   server: "quiz.staging.vidio.com"
   port: 80
@@ -431,7 +410,6 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-015.elenore55.workers.dev"
   udp: true
-
 proxy-groups:
   - name: Proxy
     <<: *line
