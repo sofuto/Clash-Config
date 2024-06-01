@@ -25,12 +25,30 @@ line: &line
 
 proxy: &proxy
   proxies:
-    - "R80:Vmess Singapore HE-1 Limit 2024-06-07"
-    - "sshocean-sg3ikozu-ws"
-    - "sshocean-id2ikozu-ws"
-    - "sshocean-ca1ikozu-ws"
-    - "sshocean-hkikozu-ws"
-    - "sshocean-ca2ikozu-ws"
+    - "UWU OWO UMU_1"
+    - "UWU OWO UMU_2"
+    - "UWU OWO UMU_3"
+    - "UWU OWO UMU_4"
+    - "UWU OWO UMU_5"
+    - "UWU OWO UMU_6"
+    - "UWU OWO UMU_7"
+    - "UWU OWO UMU_8"
+    - "UWU OWO UMU_9"
+    - "UWU OWO UMU_10"
+    - "UWU OWO UMU_11"
+    - "UWU OWO UMU_12"
+    - "UWU OWO UMU_13"
+    - "UWU OWO UMU_14"
+    - "UWU OWO UMU_15"
+    - "UWU OWO UMU_16"
+    - "UWU OWO UMU_17"
+    - "UWU OWO UMU_18"
+    - "UWU OWO UMU_19"
+    - "UWU OWO UMU_20"
+    - "UWU OWO UMU_21"
+    - "UWU OWO UMU_22"
+    - "UWU OWO UMU_23"
+    - "UWU OWO UMU_24"
 
 select: &select
   type: select
@@ -50,96 +68,362 @@ lb: &lb
   strategy: consistent-hashing # atau round-robin
 
 proxies:
-- name: "R80:Vmess Singapore HE-1 Limit 2024-06-07"
-  server: quiz.vidio.com
-  port: 80
-  type: vmess
-  uuid: 60306370-1f34-11ef-b138-205c6d5f5d78
+- name: "UWU OWO UMU_1"
+  server: "quiz.staging.vidio.com"
+  port: 2052
+  type: "vmess"
+  uuid: "ccd92698-4499-472d-a06f-f90e7e89ba4f"
   alterId: 0
-  cipher: auto
+  cipher: "auto"
   tls: false
   skip-cert-verify: true
-  network: ws
+  servername: ""
+  network: "ws"
   ws-opts:
-    path: /hyjkvm27
+    path: "/video/3YKfzGw4"
     headers:
-      Host: sg-1.hihu.net
+      Host: "rpmlybgzsg2.yofnhkfc.xyz"
+  udp: true
 
-- name: "sshocean-sg3ikozu-ws"
-  server: quiz.vidio.com
-  port: 80
-  type: vmess
-  uuid: 74b47e49-617c-4b3b-9813-cc0b16fafe0f
-  alterId: 0
-  cipher: auto
+- name: "UWU OWO UMU_2"
+  server: "quiz.staging.vidio.com"
+  port: 2096
+  type: "vless"
+  uuid: "b41e1631-ceb3-47c9-ba87-c65a46f2f5a8"
   tls: true
-  skip-cert-verify: true
-  network: ws
+  servername: "VPnerOr.sajAdHaDaDI.WEbSITe"
+  flow: ""
+  network: "ws"
   ws-opts:
-    path: /vmess
+    path: "/eOwMtmADY6cWup8R?ed=2560"
     headers:
-      Host: sg3.v2vmess.site
+      Host: "VPnerOr.sajAdHaDaDI.WEbSITe"
+  udp: true
 
-- name: "sshocean-id2ikozu-ws"
-  server: quiz.vidio.com
-  port: 80
-  type: vmess
-  uuid: f06ef832-3411-409c-8eb3-8c4049a47dcb
-  alterId: 0
-  cipher: auto
+- name: "UWU OWO UMU_3"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "vless"
+  uuid: "89b3cbba-e6ac-485a-9481-976a0415eab9"
   tls: true
-  skip-cert-verify: true
-  network: ws
+  servername: "00e463Dc.beSTVPn-4xi.PAgES.dEv"
+  flow: ""
+  network: "ws"
   ws-opts:
-    path: /vmess
+    path: "/yuyg5ujoovohfscy?ed=2560"
     headers:
-      Host: id2.v2vmess.site
+      Host: "00e463Dc.beSTVPn-4xi.PAgES.dEv"
+  udp: true
 
-- name: "sshocean-ca1ikozu-ws"
-  server: quiz.vidio.com
-  port: 80
-  type: vmess
-  uuid: 78f91489-0b31-4535-bf39-88ca44048dda
-  alterId: 0
-  cipher: auto
+- name: "UWU OWO UMU_4"
+  server: "quiz.staging.vidio.com"
+  port: 8443
+  type: "vless"
+  uuid: "1142470b-d8de-4e9d-99f9-dfefbbdb39e0"
   tls: true
-  skip-cert-verify: true
-  network: ws
+  servername: "pardazeshvpn-tg27.pages.dev"
+  flow: ""
+  network: "ws"
   ws-opts:
-    path: /vmess
+    path: "/?ed=2048"
     headers:
-      Host: ca1.v2vmess.site
+      Host: "pardazeshvpn-tg27.pages.dev"
+  udp: true
 
-- name: "sshocean-hkikozu-ws"
-  server: quiz.vidio.com
-  port: 80
-  type: vmess
-  uuid: 4256770a-c7ed-439f-a698-6c93b4ec0a89
-  alterId: 0
-  cipher: auto
+- name: "UWU OWO UMU_5"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "vless"
+  uuid: "146d4de0-ae98-411b-940c-03937947e1ef"
   tls: true
-  skip-cert-verify: true
-  network: ws
+  servername: "v2ray1ng.pages.dev"
+  flow: ""
+  network: "ws"
   ws-opts:
-    path: /vmess
+    path: "/VIP"
     headers:
-      Host: hk1.v2vmess.site
+      Host: "v2ray1ng.pages.dev"
+  client-fingerprint: "randomized"
+  udp: true
 
-- name: "sshocean-ca2ikozu-ws"
-  server: quiz.vidio.com
-  port: 80
-  type: vmess
-  uuid: 65de1b32-4145-48c1-aed5-8334f2a0cc9d
-  alterId: 0
-  cipher: auto
+- name: "UWU OWO UMU_6"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "vless"
+  uuid: "a8a09765-7681-47ba-9ea0-e0ae79d51088"
   tls: true
-  skip-cert-verify: true
-  network: ws
+  servername: "t-netplus-4vx.pages.dev"
+  flow: ""
+  network: "ws"
   ws-opts:
-    path: /vmess
+    path: "/?ed=2048"
     headers:
-      Host: ca2.v2vmess.site
+      Host: "t-netplus-4vx.pages.dev"
+  client-fingerprint: "random"
+  udp: true
 
+- name: "UWU OWO UMU_7"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "vless"
+  uuid: "0905460d-6edc-4a82-8ec8-6b76090b41c8"
+  tls: true
+  servername: "who-cares.BacheBiaPain.IR"
+  flow: ""
+  network: "ws"
+  ws-opts:
+    path: "/TELEGRAM-MARAMBASHI/?ed=2048"
+    headers:
+      Host: "who-cares.BacheBiaPain.IR"
+  alpn:
+    - "http/1.1"
+  client-fingerprint: "randomized"
+  udp: true
+- name: "UWU OWO UMU_8"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "vless"
+  uuid: "1235b6fb-7f15-4361-8da3-d1a079bdf484"
+  tls: true
+  servername: "who-doesnt-care.BacheBiaPain.IR"
+  flow: ""
+  network: "ws"
+  ws-opts:
+    path: "/TELEGRAM-MARAMBASHI/?ed=2048"
+    headers:
+      Host: "who-doesnt-care.BacheBiaPain.IR"
+  alpn:
+    - "http/1.1"
+  client-fingerprint: "randomized"
+  udp: true
+
+- name: "UWU OWO UMU_9"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "trojan"
+  password: "f0eb8c92ce8946aaba856569cff1a16b"
+  sni: "avianrecruit.com"
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/6b777a91"
+    headers:
+      Host: "avianrecruit.com"
+  udp: true
+
+- name: "UWU OWO UMU_10"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "trojan"
+  password: "telegram-VPNHTTPIinjectorfree"
+  sni: "telegram-vpnhttpinjectorfree-014.elenore55.workers.dev"
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-014.elenore55.workers.dev"
+  udp: true
+- name: "UWU OWO UMU_11"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "trojan"
+  password: "telegram-VPNHTTPIinjectorfree"
+  sni: "telegram-vpnhttpinjectorfree-011.watiger723.workers.dev"
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-011.watiger723.workers.dev"
+  udp: true
+
+- name: "UWU OWO UMU_12"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "trojan"
+  password: "telegram-VPNHTTPIinjectorfree"
+  sni: "telegram-vpnhttpinjectorfree-08.kefeh44777.workers.dev"
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-08.kefeh44777.workers.dev"
+  udp: true
+
+- name: "UWU OWO UMU_13"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "trojan"
+  password: "telegram-VPNHTTPIinjectorfree"
+  sni: "telegram-vpnhttpinjectorfree-05.wirey75238.workers.dev"
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-05.wirey75238.workers.dev"
+  udp: true
+
+- name: "UWU OWO UMU_14"
+  server: "quiz.staging.vidio.com"
+  port: 443
+  type: "trojan"
+  password: "telegram-VPNHTTPIinjectorfree"
+  sni: "telegram-vpnhttpinjectorfree-02.netago4239.workers.dev"
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-02.netago4239.workers.dev"
+  udp: true
+
+- name: "UWU OWO UMU_15"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vless"
+  uuid: "d342d11e-d424-4525-b36e-524ab1f0afa4"
+  servername: "telegram-vpnhttpinjectorfree-01.netago4239.workers.dev"
+  flow: ""
+  network: "ws"
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-01.netago4239.workers.dev"
+  udp: true
+
+- name: "UWU OWO UMU_16"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vless"
+  uuid: "77a571fb-4fd2-4b37-8525-1b7d9728bb5c"
+  servername: "telegram-vpnhttpinjectorfree-04.wirey75238.workers.dev"
+  flow: ""
+  network: "ws"
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-04.wirey75238.workers.dev"
+  udp: true
+
+- name: "UWU OWO UMU_17"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vless"
+  uuid: "77a571fb-4fd2-4b37-8254-1b7d9728bb5c"
+  servername: "telegram-vpnhttpinjectorfree-07.kefeh44777.workers.dev"
+  flow: ""
+  network: "ws"
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-07.kefeh44777.workers.dev"
+  udp: true
+
+- name: "UWU OWO UMU_18"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vless"
+  uuid: "77a571fb-4fd2-4b37-8254-1b7d9728bb5c"
+  servername: "telegram-vpnhttpinjectorfree-010.watiger723.workers.dev"
+  flow: ""
+  network: "ws"
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-010.watiger723.workers.dev"
+  udp: true
+
+- name: "UWU OWO UMU_19"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vless"
+  uuid: "77a571fb-4fd2-4b37-8256-1b7d9728bb5c"
+  servername: "telegram-vpnhttpinjectorfree-013.elenore55.workers.dev"
+  flow: ""
+  network: "ws"
+  ws-opts:
+    path: "/?ed=2048"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-013.elenore55.workers.dev"
+  udp: true
+
+- name: "UWU OWO UMU_20"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vmess"
+  uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/xmivideo.cfd:443/linkws"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-03.netago4239.workers.dev"
+  udp: true
+
+- name: "UWU OWO UMU_21"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vmess"
+  uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/xmivideo.cfd:443/linkws"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-06.wirey75238.workers.dev"
+  udp: true
+
+- name: "UWU OWO UMU_22"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vmess"
+  uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/xmivideo.cfd:443/linkws"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-09.kefeh44777.workers.dev"
+  udp: true
+
+- name: "UWU OWO UMU_23"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vmess"
+  uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/xmivideo.cfd:443/linkws"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-012.watiger723.workers.dev"
+  udp: true
+
+- name: "UWU OWO UMU_24"
+  server: "quiz.staging.vidio.com"
+  port: 80
+  type: "vmess"
+  uuid: "93ea486a-bada-42a4-ac38-d088b320fa1e"
+  alterId: 0
+  tls: false
+  skip-cert-verify: true
+  network: "ws"
+  ws-opts:
+    path: "/xmivideo.cfd:443/linkws"
+    headers:
+      Host: "telegram-vpnhttpinjectorfree-015.elenore55.workers.dev"
+  udp: true
 
 proxy-groups:
   - name: Proxy
