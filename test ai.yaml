@@ -50,6 +50,7 @@ lb: &lb
   strategy: consistent-hashing # atau round-robin
 
 proxies:
+
 - name: "R80:Vmess Singapore HE-1 Limit 2024-06-07"
   server: quiz.staging.vidio.com
   port: 80
@@ -68,7 +69,7 @@ proxies:
 
 - name: "sshocean-sg3ikozu-ws"
   server: quiz.staging.vidio.com
-  port: 80
+  port: 443
   type: vmess
   uuid: 74b47e49-617c-4b3b-9813-cc0b16fafe0f
   alterId: 0
@@ -84,7 +85,7 @@ proxies:
 
 - name: "sshocean-id2ikozu-ws"
   server: quiz.staging.vidio.com
-  port: 80
+  port: 443
   type: vmess
   uuid: f06ef832-3411-409c-8eb3-8c4049a47dcb
   alterId: 0
@@ -100,7 +101,7 @@ proxies:
 
 - name: "sshocean-ca1ikozu-ws"
   server: quiz.staging.vidio.com
-  port: 80
+  port: 443
   type: vmess
   uuid: 78f91489-0b31-4535-bf39-88ca44048dda
   alterId: 0
@@ -116,7 +117,7 @@ proxies:
 
 - name: "sshocean-hkikozu-ws"
   server: quiz.staging.vidio.com
-  port: 80
+  port: 443
   type: vmess
   uuid: 4256770a-c7ed-439f-a698-6c93b4ec0a89
   alterId: 0
@@ -132,7 +133,7 @@ proxies:
 
 - name: "sshocean-ca2ikozu-ws"
   server: quiz.staging.vidio.com
-  port: 80
+  port: 443
   type: vmess
   uuid: 65de1b32-4145-48c1-aed5-8334f2a0cc9d
   alterId: 0
