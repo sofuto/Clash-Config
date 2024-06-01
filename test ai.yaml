@@ -25,12 +25,9 @@ line: &line
 
 proxy: &proxy
   proxies:
-    - "R80:Vmess Singapore HE-1 Limit 2024-06-07"
-    - "sshocean-sg3ikozu-ws"
-    - "sshocean-id2ikozu-ws"
-    - "sshocean-ca1ikozu-ws"
-    - "sshocean-hkikozu-ws"
-    - "sshocean-ca2ikozu-ws"
+    - "[VMess] Free4You"
+    - "[VMess] Free4You 2"
+    - "[VMess] sasuke"
 
 select: &select
   type: select
@@ -50,96 +47,54 @@ lb: &lb
   strategy: consistent-hashing # atau round-robin
 
 proxies:
-- name: "R80:Vmess Singapore HE-1 Limit 2024-06-07"
-  server: quiz.staging.vidio.com
-  port: 80
-  type: vmess
-  uuid: 60306370-1f34-11ef-b138-205c6d5f5d78
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  servername: sg-1.hihu.net
-  network: ws
-  ws-opts:
-    path: /hyjkvm27
-    headers:
-      Host: sg-1.hihu.net
-- name: "sshocean-sg3ikozu-ws"
-  server: quiz.staging.vidio.com
-  port: 80
-  type: vmess
-  uuid: 74b47e49-617c-4b3b-9813-cc0b16fafe0f
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: sg3.v2vmess.site
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: sg3.v2vmess.site
-- name: "sshocean-id2ikozu-ws"
-  server: quiz.staging.vidio.com
-  port: 80
-  type: vmess
-  uuid: f06ef832-3411-409c-8eb3-8c4049a47dcb
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: id2.v2vmess.site
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: id2.v2vmess.site
-- name: "sshocean-ca1ikozu-ws"
-  server: quiz.staging.vidio.com
-  port: 80
-  type: vmess
-  uuid: 78f91489-0b31-4535-bf39-88ca44048dda
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: ca1.v2vmess.site
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: ca1.v2vmess.site
-- name: "sshocean-hkikozu-ws"
-  server: quiz.staging.vidio.com
-  port: 80
-  type: vmess
-  uuid: 4256770a-c7ed-439f-a698-6c93b4ec0a89
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: hk1.v2vmess.site
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: hk1.v2vmess.site
-- name: "sshocean-ca2ikozu-ws"
-  server: quiz.staging.vidio.com
-  port: 80
-  type: vmess
-  uuid: 65de1b32-4145-48c1-aed5-8334f2a0cc9d
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  servername: ca2.v2vmess.site
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: ca2.v2vmess.site
+  - name: "[VMess] Free4You"
+    server: *video_1
+    port: 80
+    type: vmess
+    uuid: b344cca2-b7fe-41eb-a10e-3e810a6f952f
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: lukistore.sabdo.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: lukistore.sabdo.my.id
+    udp: true
+  - name: "[VMess] Free4You 2"
+    server: *video_1
+    port: 80
+    type: vmess
+    uuid: b344cca2-b7fe-41eb-a10e-3e810a6f952f
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: lukistore.sabdo.my.id
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: lukistore.sabdo.my.id
+    udp: true
+  - name: "[VMess] sasuke"
+    server: *video_1
+    port: 80
+    type: vmess
+    uuid: c2703a80-52c2-4546-88b6-5be41ad93110
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: azure-jepang.sshvip.site
+    network: ws
+    ws-opts:
+      path: /vmess
+      headers:
+        Host: azure-jepang.sshvip.site
+    udp: true
 
 proxy-groups:
   - name: Proxy
