@@ -12,7 +12,7 @@ ipv6: false
 dns:
   enable: true
   ipv6: false
-  enhanced-mode: redir-host
+  enhanced-mode: fake-ip
   listen: 0.0.0.0:7894
   fallback-filter:
     geoip: false
@@ -926,10 +926,6 @@ proxies:
       server: "quiz.staging.vidio.com"
       port: 443
       type: "vless"
-    - name: "UWU OWO UMU_60"
-      server: "quiz.staging.vidio.com"
-      port: 443
-      type: "vless"
       uuid: "0905460d-6edc-4a82-8ec8-6b76090b41c8"
       alterId: 0
       cipher: ""
@@ -1530,7 +1526,7 @@ proxies:
         headers:
           Host: "rpmlybgzsg2.yofnhkfc.xyz"
       udp: true
-  proxy-groups:
+proxy-groups:
   - name: sshkit-generator
     type: load-balance
     url: 'http://www.gstatic.com/generate_204'
