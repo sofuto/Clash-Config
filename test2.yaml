@@ -14,10 +14,10 @@ dns:
     - 1.1.1.1
     - 112.215.203.254
 bug:
-  - &video_1 quiz.staging.vidio.com
-  - &video_2 img.email3.vidio.com
-  - &video_3 quiz.vidio.com
-  - &video_4 quiz.int.vidio.com
+  - &video 1 quiz.staging.vidio.com
+  - &video 2 img.email3.vidio.com
+  - &video 3 quiz.vidio.com
+  - &video 4 quiz.int.vidio.com
 line: &line
   type: select
   proxies:
@@ -47,7 +47,7 @@ lb: &lb
 proxies:
 proxies:
   - name: "[VMess] Free4You"
-    server: *video_1
+    server: *video 1
     port: 80
     type: vmess
     uuid: b344cca2-b7fe-41eb-a10e-3e810a6f952f
@@ -63,7 +63,7 @@ proxies:
         Host: lukistore.sabdo.my.id
     udp: true
   - name: "[VMess] Free4You 2"
-    server: *video_1
+    server: *video 1
     port: 80
     type: vmess
     uuid: b344cca2-b7fe-41eb-a10e-3e810a6f952f
@@ -79,7 +79,7 @@ proxies:
         Host: lukistore.sabdo.my.id
     udp: true
   - name: "[VMess] sasuke"
-    server: *video_1
+    server: *video 1
     port: 80
     type: vmess
     uuid: c2703a80-52c2-4546-88b6-5be41ad93110
@@ -114,7 +114,7 @@ rule-providers:
     type: http
     behavior: classical
     path: ./adblock.yaml
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios rule script/master/rule/Clash/Advertising/Advertising Classical No Resolve.yaml"
     interval: 600
 rules:
   - RULE-SET,adblock,Iklan

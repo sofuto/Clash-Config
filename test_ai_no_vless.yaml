@@ -25,17 +25,17 @@ line: &line
 
 proxy: &proxy
   proxies:
-    - "UWU OWO UMU_1"
-    - "UWU OWO UMU_9"
-    - "UWU OWO UMU_10"
-    - "UWU OWO UMU_11"
-    - "UWU OWO UMU_12"
-    - "UWU OWO UMU_13"
-    - "UWU OWO UMU_20"
-    - "UWU OWO UMU_21"
-    - "UWU OWO UMU_22"
-    - "UWU OWO UMU_23"
-    - "UWU OWO UMU_24"
+    - "UWU OWO UMU 1"
+    - "UWU OWO UMU 9"
+    - "UWU OWO UMU 10"
+    - "UWU OWO UMU 11"
+    - "UWU OWO UMU 12"
+    - "UWU OWO UMU 13"
+    - "UWU OWO UMU 20"
+    - "UWU OWO UMU 21"
+    - "UWU OWO UMU 22"
+    - "UWU OWO UMU 23"
+    - "UWU OWO UMU 24"
 
 select: &select
   type: select
@@ -55,7 +55,7 @@ lb: &lb
   strategy: consistent-hashing # atau round-robin
 
 proxies:
-- name: "UWU OWO UMU_1"
+- name: "UWU OWO UMU 1"
   server: "quiz.staging.vidio.com"
   port: 2052
   type: "vmess"
@@ -71,7 +71,7 @@ proxies:
     headers:
       Host: "rpmlybgzsg2.yofnhkfc.xyz"
   udp: true
-- name: "UWU OWO UMU_9"
+- name: "UWU OWO UMU 9"
   server: "quiz.staging.vidio.com"
   port: 443
   type: "trojan"
@@ -84,7 +84,7 @@ proxies:
     headers:
       Host: "avianrecruit.com"
   udp: true
-- name: "UWU OWO UMU_10"
+- name: "UWU OWO UMU 10"
   server: "quiz.staging.vidio.com"
   port: 443
   type: "trojan"
@@ -97,7 +97,7 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-014.elenore55.workers.dev"
   udp: true
-- name: "UWU OWO UMU_11"
+- name: "UWU OWO UMU 11"
   server: "quiz.staging.vidio.com"
   port: 443
   type: "trojan"
@@ -110,7 +110,7 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-011.watiger723.workers.dev"
   udp: true
-- name: "UWU OWO UMU_12"
+- name: "UWU OWO UMU 12"
   server: "quiz.staging.vidio.com"
   port: 443
   type: "trojan"
@@ -123,7 +123,7 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-08.kefeh44777.workers.dev"
   udp: true
-- name: "UWU OWO UMU_13"
+- name: "UWU OWO UMU 13"
   server: "quiz.staging.vidio.com"
   port: 443
   type: "trojan"
@@ -136,7 +136,7 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-05.wirey75238.workers.dev"
   udp: true
-- name: "UWU OWO UMU_20"
+- name: "UWU OWO UMU 20"
   server: "quiz.staging.vidio.com"
   port: 80
   type: "vmess"
@@ -151,7 +151,7 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-03.netago4239.workers.dev"
   udp: true
-- name: "UWU OWO UMU_21"
+- name: "UWU OWO UMU 21"
   server: "quiz.staging.vidio.com"
   port: 80
   type: "vmess"
@@ -166,7 +166,7 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-06.wirey75238.workers.dev"
   udp: true
-- name: "UWU OWO UMU_22"
+- name: "UWU OWO UMU 22"
   server: "quiz.staging.vidio.com"
   port: 80
   type: "vmess"
@@ -181,7 +181,7 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-09.kefeh44777.workers.dev"
   udp: true
-- name: "UWU OWO UMU_23"
+- name: "UWU OWO UMU 23"
   server: "quiz.staging.vidio.com"
   port: 80
   type: "vmess"
@@ -196,7 +196,7 @@ proxies:
     headers:
       Host: "telegram-vpnhttpinjectorfree-012.watiger723.workers.dev"
   udp: true
-- name: "UWU OWO UMU_24"
+- name: "UWU OWO UMU 24"
   server: "quiz.staging.vidio.com"
   port: 80
   type: "vmess"
@@ -231,7 +231,7 @@ rule-providers:
     type: http
     behavior: classical
     path: ./adblock.yaml
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_Classical_No_Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios rule script/master/rule/Clash/Advertising/Advertising Classical No Resolve.yaml"
     interval: 600
 
 rules:
