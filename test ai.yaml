@@ -37,7 +37,7 @@ proxy: &proxy
     - "Vless_5"
     - "Vless_6"
     - "[VMess] ikozuvip"
-    - Trojan-paikozu-GO/WS
+    - "Trojan-paikozu-GO/WS"
     
 select: &select
   type: select
