@@ -1197,7 +1197,6 @@ proxy-providers:
       headers:
         Host: paikozu.group-nbc.my.id
     udp: true
-
   akun2: &sni
     port: 443
     type: trojan
@@ -1208,7 +1207,6 @@ proxy-providers:
     grpc-opts:
       grpc-service-name: trojan-grpc
     udp: true  
-
   proxies:
     - name: A1
       <<: *ws
@@ -1233,6 +1231,7 @@ proxy-providers:
     url: http://www.gstatic.com/generate_204
     interval: 30
   use-hosts: true
+  
 hosts:
   bug.sni:
   - 23.32.152.229
