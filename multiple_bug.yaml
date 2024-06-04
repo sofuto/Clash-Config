@@ -1,0 +1,126 @@
+proxy-groups:
+- name: ID
+  type: load-balance
+  strategy: round-robin
+  disable-udp: false
+  use:
+  - ID
+  url: http://www.gstatic.com/generate_204
+  interval: '30'
+- name: GAME
+  type: select
+  disable-udp: false
+  proxies:
+  - ID
+  - DIRECT
+  - REJECT
+  url: http://www.gstatic.com/generate_204
+  interval: '30'
+- name: UNIVERSAL
+  type: select
+  disable-udp: false
+  proxies:
+  - ID
+  - DIRECT
+  - REJECT
+- name: WhatsApp
+  type: select
+  disable-udp: false
+  proxies:
+  - ID
+  - DIRECT
+  - REJECT
+  url: http://www.gstatic.com/generate_204
+  interval: '30'
+dns:
+  nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  listen: 0.0.0.0:7874
+  fake-ip-filter:
+  - "+.*"
+  default-nameserver:
+  - 8.8.8.8
+  - 8.8.4.4
+redir-port: 7892
+tproxy-port: 7895
+port: 7890
+socks-port: 7891
+mixed-port: 7893
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: Amanah
+bind-address: "*"
+external-ui: "/usr/share/openclash/ui"
+ipv6: false
+profile:
+  store-selected: true
+  store-fake-ip: true
+unified-delay: true
+rules:
+- IP-CIDR,127.0.0.1/32,REJECT,no-resolve
+- DST-PORT,7895,REJECT
+- DST-PORT,7892,REJECT
+- RULE-SET,R-GAME,GAME
+- RULE-SET,R-UNIVERSAL,UNIVERSAL
+- RULE-SET,R-WhatsApp,WhatsApp
+- RULE-SET,Direct,DIRECT
+- RULE-SET,Reject,REJECT
+- MATCH,GLOBAL
+rule-providers:
+  Direct:
+    type: file
+    behavior: classical
+    path: "./rule_provider/Direct.yaml"
+  Reject:
+    type: file
+    behavior: classical
+    path: "./rule_provider/Reject.yaml"
+  R-GAME:
+    type: file
+    behavior: classical
+    path: "./rule_provider/Gaming.yaml"
+  R-UNIVERSAL:
+    type: file
+    behavior: classical
+    path: "./rule_provider/Universal.yaml"
+  R-WhatsApp:
+    type: file
+    behavior: classical
+    path: "./rule_provider/WhatsApp.yaml"
+proxy-providers:
+  ID:
+    type: file
+    path: "./proxy_provider/ID.yaml"
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 30
+    use-hosts: true
+hosts:
+  bug.sni:
+  - 23.32.152.229
+  - 23.32.152.248
+  - 18.164.174.122
+  - 18.164.174.120
+  - 18.164.174.13
+  - 18.164.174.119
+  - 23.206.229.76
+  - 23.206.229.72
+  bug.ws:
+  - 104.17.105.89
+  - 104.17.103.89
+  - 104.17.106.89
+  - 104.16.230.163
+  - 104.22.5.240
+  - 104.22.5.240
+  - 104.16.231.163
+  - 104.16.232.163
+  - 104.17.70.206
+  - 104.17.71.206 
