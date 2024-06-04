@@ -1,11 +1,13 @@
 mixed-port: 10809
+tproxy-port: 7893
 allow-lan: true
 bind-address: "*"
 mode: rule
 log-level: info
 ipv6: true
 external-controller: 0.0.0.0:9090
-
+experimental:
+  ignore-resolve-fail: true
 dns:
   enable: true
   listen: 127.0.0.1:1053
@@ -15,7 +17,10 @@ dns:
     - 8.8.8.8
     - 1.1.1.1
     - 112.215.203.254
-
+tun:
+  enable: false
+  macOS-auto-route: true
+  macOS-auto-detect-interface: true
 line: &line
   type: select
   proxies:
@@ -32,6 +37,7 @@ proxy: &proxy
     - "Vless_5"
     - "Vless_6"
     - "[VMess] ikozuvip"
+    - Trojan-paikozu-GO/WS
     
 select: &select
   type: select
@@ -139,7 +145,19 @@ proxies:
       headers:
         Host: paikozu.group-nbc.my.id
     udp: true
-    
+  - name: Trojan-paikozu-GO/WS
+    server: "quiz.staging.vidio.com"
+    port: 443
+    type: trojan
+    password: a3fc0a36-a29f-4089-8d84-22fd85e5e734
+    skip-cert-verify: true
+    sni: paikozu.group-nbc.my.id
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: paikozu.group-nbc.my.id
+    udp: true  
 proxy-groups:
   - name: Proxy
     <<: *line
