@@ -1,0 +1,44 @@
+#AKUN WS
+akun: &ws
+    port: 443
+    port: 443
+    type: trojan
+    password: a3fc0a36-a29f-4089-8d84-22fd85e5e734
+    skip-cert-verify: true
+    sni: paikozu.group-nbc.my.id
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: paikozu.group-nbc.my.id
+
+#AKUN SNI
+akun2: &sni
+    port: 443
+    type: trojan
+    password:  a3fc0a36-a29f-4089-8d84-22fd85e5e734
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-grpc
+    udp: true
+
+proxies:
+  - name: A1
+    <<: *ws
+    server: quiz.vidio.com
+  - name: A2
+    <<: *ws
+    server: quiz.int.vidio.com
+  - name: A3
+    <<: *ws
+    server: quiz.staging.vidio.com
+  - name: S1
+    <<: *sni
+    sni: static-web.prod.vidiocdn.com
+  - name: S2
+    <<: *sni
+    sni: sb.scorecardresearch.com
+  - name: S3
+    <<: *sni
+    sni: token-media-vidio-com.akamaized.net

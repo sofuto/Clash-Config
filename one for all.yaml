@@ -3,43 +3,43 @@ rule-providers:
   Direct:
     type: http
     behavior: classical
-    path: ./direct.yaml
+    url: ./direct.yaml
     url: "https://raw.githubusercontent.com/sofuto/Clash Config v2/main/rule/direct.yaml"
     interval: 600
   Reject:
     type: http
     behavior: classical
-    path: ./reject.yaml
+    url: ./reject.yaml
     url: "https://raw.githubusercontent.com/sofuto/Clash Config v2/main/rule/reject.yaml"
     interval: 600
   Ads-18+:
     type: http
     behavior: classical
-    path: ./Advertising Classical No Resolve.yaml
+    url: ./Advertising Classical No Resolve.yaml
     url: "https://raw.githubusercontent.com/blackmatrix7/ios rule script/master/rule/Clash/Advertising/Advertising Classical No Resolve.yaml"
     interval: 600
   Speedtest:
     type: http
     behavior: classical
-    path: ./speedtest.yaml
+    url: ./speedtest.yaml
     url: "https://raw.githubusercontent.com/sofuto/Clash Config v2/main/rule/speedtest.yaml"
     interval: 600
   WA:
     type: http
     behavior: classical
-    path: ./whatsapp.yaml
+    url: ./whatsapp.yaml
     url: "https://raw.githubusercontent.com/sofuto/Clash Config v2/main/rule/whatsapp.yaml"
     interval: 600
   OlShop:
     type: http
     behavior: classical
-    path: ./Shopee.yaml
+    url: ./Shopee.yaml
     url: "https://raw.githubusercontent.com/blackmatrix7/ios rule script/master/rule/Clash/Shopee/Shopee.yaml"
     interval: 600
 proxy-providers:
   VPN:
     type: http
-    path: ./akun.yaml
+    url: ./akun.yaml
     url: "https://raw.githubusercontent.com/sofuto/Clash Config v2/main/proxy/akun.yaml"
     health-check:
       enable: true

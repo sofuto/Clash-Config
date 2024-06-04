@@ -58,7 +58,7 @@ proxies:
     servername: lukistore.sabdo.my.id
     network: ws
     ws-opts:
-      path: /vmess
+      url: /vmess
       headers:
         Host: lukistore.sabdo.my.id
     udp: true
@@ -74,7 +74,7 @@ proxies:
     servername: lukistore.sabdo.my.id
     network: ws
     ws-opts:
-      path: /vmess
+      url: /vmess
       headers:
         Host: lukistore.sabdo.my.id
     udp: true
@@ -90,7 +90,7 @@ proxies:
     servername: azure-jepang.sshvip.site
     network: ws
     ws-opts:
-      path: /vmess
+      url: /vmess
       headers:
         Host: azure-jepang.sshvip.site
     udp: true
@@ -113,7 +113,7 @@ rule-providers:
   adblock:
     type: http
     behavior: classical
-    path: ./adblock.yaml
+    url: ./adblock.yaml
     url: "https://raw.githubusercontent.com/blackmatrix7/ios rule script/master/rule/Clash/Advertising/Advertising Classical No Resolve.yaml"
     interval: 600
 rules:
