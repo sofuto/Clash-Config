@@ -37,27 +37,27 @@ rule-providers:
   Direct:
     type: file
     behavior: classical
-    url: "https://raw.githubusercontent.com/sofuto/Clash-Config/main//rule_provider/Direct.yaml"
+    url: "https://raw.githubusercontent.com/sofuto/Clash-Config/main/rule_provider/Direct.yaml"
   Reject:
     type: file
     behavior: classical
-    url: "https://raw.githubusercontent.com/sofuto/Clash-Config/main//rule_provider/Reject.yaml"
+    url: "https://raw.githubusercontent.com/sofuto/Clash-Config/main/rule_provider/Reject.yaml"
   R-GAME:
     type: file
     behavior: classical
-    url: "https://raw.githubusercontent.com/sofuto/Clash-Config/main//rule_provider/Gaming.yaml"
+    url: "https://raw.githubusercontent.com/sofuto/Clash-Config/main/rule_provider/Gaming.yaml"
   R-UNIVERSAL:
     type: file
     behavior: classical
-    url: "https://raw.githubusercontent.com/sofuto/Clash-Config/main//rule_provider/Universal.yaml"
+    url: "https://raw.githubusercontent.com/sofuto/Clash-Config/main/rule_provider/Universal.yaml"
   R-WhatsApp:
     type: file
     behavior: classical
-    url: "https://raw.githubusercontent.com/sofuto/Clash-Config/main//rule_provider/WhatsApp.yaml"
+    url: "https://raw.githubusercontent.com/sofuto/Clash-Config/main/rule_provider/WhatsApp.yaml"
 proxy-providers:
   ID:
     type: file
-    url: "https://raw.githubusercontent.com/sofuto/Clash-Config/main//proxy_provider/ID.yaml"
+    url: "https://raw.githubusercontent.com/sofuto/Clash-Config/main/proxy_provider/ID.yaml"
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
