@@ -1184,60 +1184,59 @@ rule-providers:
     # Whatsapp
     - DST-PORT,3478
 proxy-providers:
-  ID:
-  #AKUN WS
-    akun: &ws
-      port: 443
-      type: trojan
-      password: a3fc0a36-a29f-4089-8d84-22fd85e5e734
-      skip-cert-verify: true
-      sni: paikozu.group-nbc.my.id
-      network: ws
-      ws-opts:
-        path: /trojan-ws
-        headers:
-          Host: paikozu.group-nbc.my.id
-      udp: true
+- ID :  #AKUN WS
+  akun: &ws
+    port: 443
+    type: trojan
+    password: a3fc0a36-a29f-4089-8d84-22fd85e5e734
+    skip-cert-verify: true
+    sni: paikozu.group-nbc.my.id
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: paikozu.group-nbc.my.id
+    udp: true
 
-    #AKUN SNI
-    akun2: &sni
-      port: 443
-      type: trojan
-      password:  a3fc0a36-a29f-4089-8d84-22fd85e5e734
-      skip-cert-verify: true
-      sni: bug.com
-      network: grpc
-      grpc-opts:
-        grpc-service-name: trojan-grpc
-      udp: true
+  #AKUN SNI
+  akun2: &sni
+    port: 443
+    type: trojan
+    password:  a3fc0a36-a29f-4089-8d84-22fd85e5e734
+    skip-cert-verify: true
+    sni: bug.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-grpc
+    udp: true  
 
-    proxies:
+  proxies:
       #BUG WS
-      - name: A1
-        <<: *ws
-        server: quiz.vidio.com
-      - name: A2
-        <<: *ws
-        server: quiz.int.vidio.com
-      - name: A3
-        <<: *ws
-        server: quiz.staging.vidio.com
+    - name: A1
+      <<: *ws
+       server: quiz.vidio.com
+    - name: A2
+      <<: *ws
+      server: quiz.int.vidio.com
+    - name: A3
+      <<: *ws
+      server: quiz.staging.vidio.com
 
-      #BUG SNI
-      - name: S1
-        <<: *sni
-        sni: static-web.prod.vidiocdn.com
-      - name: S2
-        <<: *sni
-        sni: sb.scorecardresearch.com
-      - name: S3
-        <<: *sni
-        sni: token-media-vidio-com.akamaized.net
-    health-check:
-      enable: true
-      url: http://www.gstatic.com/generate_204
-      interval: 30
-    use-hosts: true
+    #BUG SNI
+    - name: S1
+      <<: *sni
+      sni: static-web.prod.vidiocdn.com
+    - name: S2
+      <<: *sni
+      sni: sb.scorecardresearch.com
+    - name: S3
+      <<: *sni
+      sni: token-media-vidio-com.akamaized.net
+  health-check:
+    enable: true
+    url: http://www.gstatic.com/generate_204
+    interval: 30
+  use-hosts: true
 hosts:
   bug.sni:
   - 23.32.152.229
