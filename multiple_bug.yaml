@@ -1184,7 +1184,7 @@ rule-providers:
     # Whatsapp
     - DST-PORT,3478
 proxy-providers:
-- ID :  #AKUN WS
+- ID :
   akun: &ws
     port: 443
     type: trojan
@@ -1198,7 +1198,6 @@ proxy-providers:
         Host: paikozu.group-nbc.my.id
     udp: true
 
-  #AKUN SNI
   akun2: &sni
     port: 443
     type: trojan
@@ -1211,7 +1210,6 @@ proxy-providers:
     udp: true  
 
   proxies:
-      #BUG WS
     - name: A1
       <<: *ws
        server: quiz.vidio.com
@@ -1221,8 +1219,6 @@ proxy-providers:
     - name: A3
       <<: *ws
       server: quiz.staging.vidio.com
-
-    #BUG SNI
     - name: S1
       <<: *sni
       sni: static-web.prod.vidiocdn.com
