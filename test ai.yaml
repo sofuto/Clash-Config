@@ -45,7 +45,7 @@ select: &select
   <<: *proxy
 
 auto: &auto
-  type: url-test
+  type: path-test
   <<: *proxy
   url: 'https://clients3.google.com'
   interval: 300
@@ -68,7 +68,7 @@ proxies:
     flow: ""
     network: "ws"
     ws-opts:
-      url: "/eOwMtmADY6cWup8R?ed=2560"
+      path: "/eOwMtmADY6cWup8R?ed=2560"
       headers:
         Host: "VPnerOr.sajAdHaDaDI.WEbSITe"
     udp: true
@@ -82,7 +82,7 @@ proxies:
     flow: ""
     network: "ws"
     ws-opts:
-      url: "/yuyg5ujoovohfscy?ed=2560"
+      path: "/yuyg5ujoovohfscy?ed=2560"
       headers:
         Host: "00e463Dc.beSTVPn-4xi.PAgES.dEv"
     udp: true
@@ -96,7 +96,7 @@ proxies:
     flow: ""
     network: "ws"
     ws-opts:
-      url: "/?ed=2048"
+      path: "/?ed=2048"
       headers:
         Host: "pardazeshvpn-tg27.pages.dev"
     udp: true
@@ -110,7 +110,7 @@ proxies:
     flow: ""
     network: "ws"
     ws-opts:
-      url: "/VIP"
+      path: "/VIP"
       headers:
         Host: "v2ray1ng.pages.dev"
     client-fingerprint: "randomized"
@@ -125,7 +125,7 @@ proxies:
     flow: ""
     network: "ws"
     ws-opts:
-      url: "/?ed=2048"
+      path: "/?ed=2048"
       headers:
         Host: "t-netplus-4vx.pages.dev"
     client-fingerprint: "random"
@@ -142,7 +142,7 @@ proxies:
     servername: paikozu.group-nbc.my.id
     network: ws
     ws-opts:
-      url: /vmess
+      path: /vmess
       headers:
         Host: paikozu.group-nbc.my.id
     udp: true
@@ -155,7 +155,7 @@ proxies:
     sni: paikozu.group-nbc.my.id
     network: ws
     ws-opts:
-      url: /trojan-ws
+      path: /trojan-ws
       headers:
         Host: paikozu.group-nbc.my.id
     udp: true
@@ -170,7 +170,7 @@ proxies:
     servername: vpn.paikozu.my.id
     network: ws
     ws-opts:
-      url: /vless
+      path: /vless
       headers:
         Host: vpn.paikozu.my.id
     udp: true
@@ -185,7 +185,7 @@ proxies:
     servername: vpn.paikozu.my.id
     network: ws
     ws-opts:
-      url: /vless
+      path: /vless
       headers:
         Host: vpn.paikozu.my.id
     udp: true
