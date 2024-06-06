@@ -142,7 +142,7 @@ proxies:
     servername: paikozu.group-nbc.my.id
     network: ws
     ws-opts:
-      url: /vmess
+      path: /vmess
       headers:
         Host: paikozu.group-nbc.my.id
     udp: true
@@ -155,7 +155,7 @@ proxies:
     sni: paikozu.group-nbc.my.id
     network: ws
     ws-opts:
-      url: /trojan-ws
+      path: /trojan-ws
       headers:
         Host: paikozu.group-nbc.my.id
     udp: true
@@ -170,7 +170,7 @@ proxies:
     servername: vpn.paikozu.my.id
     network: ws
     ws-opts:
-      url: /vless
+      path: /vless
       headers:
         Host: vpn.paikozu.my.id
     udp: true
@@ -185,7 +185,7 @@ proxies:
     servername: vpn.paikozu.my.id
     network: ws
     ws-opts:
-      url: /vless
+      path: /vless
       headers:
         Host: vpn.paikozu.my.id
     udp: true
