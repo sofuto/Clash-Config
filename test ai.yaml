@@ -38,7 +38,8 @@ proxy: &proxy
     - "Vless_6"
     - "[VMess] ikozuvip"
     - "Trojan-paikozu-GO/WS"
-    
+    - "Vless-ikozu-WS TLS"
+    - "Vless-ikozu-WS (CDN) Non TLS"
 select: &select
   type: select
   <<: *proxy
@@ -145,7 +146,7 @@ proxies:
       headers:
         Host: paikozu.group-nbc.my.id
     udp: true
-  - name: Trojan-paikozu-GO/WS
+  - name: "Trojan-paikozu-GO/WS"
     server: "quiz.staging.vidio.com"
     port: 443
     type: trojan
@@ -157,7 +158,37 @@ proxies:
       url: /trojan-ws
       headers:
         Host: paikozu.group-nbc.my.id
-    udp: true  
+    udp: true
+  - name: "Vless-ikozu-WS TLS"
+    server: quiz.staging.vidio.com
+    port: 443
+    type: vless
+    uuid: 5275120b-85ea-44d0-b052-3e07875a2008
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vpn.paikozu.my.id
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: vpn.paikozu.my.id
+    udp: true
+  - name: "Vless-ikozu-WS (CDN) Non TLS"
+    server: quiz.staging.vidio.com
+    port: 80
+    type: vless
+    uuid: 5275120b-85ea-44d0-b052-3e07875a2008
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: vpn.paikozu.my.id
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: vpn.paikozu.my.id
+    udp: true
 proxy-groups:
   - name: Proxy
     <<: *line
@@ -178,7 +209,7 @@ rule-providers:
     type: http
     behavior: classical
     url: ./adblock.yaml
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios rule script/master/rule/Clash/Advertising/Advertising Classical No Resolve.yaml"
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_No_Resolve.yaml"
     interval: 600
 
 rules:
