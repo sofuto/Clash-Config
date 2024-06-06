@@ -170,7 +170,7 @@ proxies:
     servername: vpn.paikozu.my.id
     network: ws
     ws-opts:
-      path: /vless
+      url: /vless
       headers:
         Host: vpn.paikozu.my.id
     udp: true
@@ -185,7 +185,7 @@ proxies:
     servername: vpn.paikozu.my.id
     network: ws
     ws-opts:
-      path: /vless
+      url: /vless
       headers:
         Host: vpn.paikozu.my.id
     udp: true
