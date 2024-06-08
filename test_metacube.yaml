@@ -1,0 +1,219 @@
+mixed-port: 10809
+tproxy-port: 7893
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: true
+external-controller: 0.0.0.0:9090
+external-ui: /etc/mihomo/ui
+experimental:
+  ignore-resolve-fail: true
+dns:
+  enable: true
+  listen: 127.0.0.1:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
+tun:
+  enable: false
+  macOS-auto-route: true
+  macOS-auto-detect-interface: true
+line: &line
+  type: select
+  proxies:
+    - Select
+    - Auto
+    - Load Balance
+    - Iklan
+
+proxy: &proxy
+  proxies:
+    - "Vless_2"
+    - "Vless_3"
+    - "Vless_4"
+    - "Vless_5"
+    - "Vless_6"
+    - "Vless-ikozu-WS TLS"
+    - "Vless-ikozu-WS (CDN) Non TLS"
+    - "VLESS-sg1.porpuse.cfd"
+    - "VLESS-my1.porpuse.cfd"
+    
+select: &select
+  type: select
+  <<: *proxy
+
+auto: &auto
+  type: url-test
+  <<: *proxy
+  url: 'https://clients3.google.com'
+  interval: 300
+
+lb: &lb
+  type: load-balance
+  <<: *proxy
+  url: 'https://clients3.google.com'
+  interval: 300
+  strategy: consistent-hashing # atau round-robin
+
+proxies:
+  - name: "Vless_2"
+    server: "quiz.staging.vidio.com"
+    port: 2096
+    type: "vless"
+    uuid: "b41e1631-ceb3-47c9-ba87-c65a46f2f5a8"
+    tls: true
+    servername: "VPnerOr.sajAdHaDaDI.WEbSITe"
+    flow: ""
+    network: "ws"
+    ws-opts:
+      url: "/eOwMtmADY6cWup8R?ed=2560"
+      headers:
+        Host: "VPnerOr.sajAdHaDaDI.WEbSITe"
+    udp: true
+  - name: "Vless_3"
+    server: "quiz.staging.vidio.com"
+    port: 443
+    type: "vless"
+    uuid: "89b3cbba-e6ac-485a-9481-976a0415eab9"
+    tls: true
+    servername: "00e463Dc.beSTVPn-4xi.PAgES.dEv"
+    flow: ""
+    network: "ws"
+    ws-opts:
+      url: "/yuyg5ujoovohfscy?ed=2560"
+      headers:
+        Host: "00e463Dc.beSTVPn-4xi.PAgES.dEv"
+    udp: true
+  - name: "Vless_4"
+    server: "quiz.staging.vidio.com"
+    port: 8443
+    type: "vless"
+    uuid: "1142470b-d8de-4e9d-99f9-dfefbbdb39e0"
+    tls: true
+    servername: "pardazeshvpn-tg27.pages.dev"
+    flow: ""
+    network: "ws"
+    ws-opts:
+      url: "/?ed=2048"
+      headers:
+        Host: "pardazeshvpn-tg27.pages.dev"
+    udp: true
+  - name: "Vless_5"
+    server: "quiz.staging.vidio.com"
+    port: 443
+    type: "vless"
+    uuid: "146d4de0-ae98-411b-940c-03937947e1ef"
+    tls: true
+    servername: "v2ray1ng.pages.dev"
+    flow: ""
+    network: "ws"
+    ws-opts:
+      url: "/VIP"
+      headers:
+        Host: "v2ray1ng.pages.dev"
+    client-fingerprint: "randomized"
+    udp: true
+  - name: "Vless_6"
+    server: "quiz.staging.vidio.com"
+    port: 443
+    type: "vless"
+    uuid: "a8a09765-7681-47ba-9ea0-e0ae79d51088"
+    tls: true
+    servername: "t-netplus-4vx.pages.dev"
+    flow: ""
+    network: "ws"
+    ws-opts:
+      url: "/?ed=2048"
+      headers:
+        Host: "t-netplus-4vx.pages.dev"
+    client-fingerprint: "random"
+    udp: true
+  - name: "Vless-ikozu-WS TLS"
+    server: quiz.staging.vidio.com
+    port: 443
+    type: vless
+    uuid: 5275120b-85ea-44d0-b052-3e07875a2008
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: vpn.paikozu.my.id
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: vpn.paikozu.my.id
+    udp: true
+  - name: "Vless-ikozu-WS (CDN) Non TLS"
+    server: quiz.staging.vidio.com
+    port: 80
+    type: vless
+    uuid: 5275120b-85ea-44d0-b052-3e07875a2008
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    servername: vpn.paikozu.my.id
+    network: ws
+    ws-opts:
+      path: /vless
+      headers:
+        Host: vpn.paikozu.my.id
+    udp: true
+  - name: "VLESS-sg1.porpuse.cfd"
+    server: quiz.staging.vidio.com
+    port: 443
+    type: vless
+    uuid: dfc3ad71-4ab8-424e-b5f7-965d18153ccb
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg1.porpuse.cfd
+    network: ws
+    ws-opts:
+      path: /vless-bodong
+      headers:
+        Host: sg1.porpuse.cfd
+    udp: true
+  - name: "VLESS-my1.porpuse.cfd"
+    server: quiz.staging.vidio.com
+    port: 443
+    type: vless
+    uuid: dfc3ad71-4ab8-424e-b5f7-965d18153ccb
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: my1.porpuse.cfd
+    network: ws
+    ws-opts:
+      path: /vless-bodong
+      headers:
+        Host: my1.porpuse.cfd
+    udp: true
+proxy-groups:
+  - name: Proxy
+    <<: *line
+  - name: Iklan
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: Select
+    <<: *select
+  - name: Auto
+    <<: *auto
+  - name: Load Balance
+    <<: *lb
+
+rule-providers:
+  adblock:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_No_Resolve.yaml"
+    interval: 600
+
+rules:
+  - RULE-SET,adblock,Iklan
+  - MATCH,Proxy
