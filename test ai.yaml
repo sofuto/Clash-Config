@@ -207,7 +207,7 @@ proxy-groups:
     <<: *lb
 
 rule-providers:
-  adblock:
+  oisd_big:
     type: http
     behavior: classical
     path: "./rule_provider/oisd_big.yaml"
@@ -215,5 +215,5 @@ rule-providers:
     interval: 28800 # Update rules every 8 hours
 
 rules:
-  - RULE-SET,adblock,Iklan
+  - RULE-SET,oisd_big,Iklan
   - MATCH,Proxy
