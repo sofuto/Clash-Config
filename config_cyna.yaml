@@ -1883,7 +1883,18 @@ proxy-groups:
       - "[VMess] UWU OWO UMU 11"
       - "[VMess] UWU OWO UMU 12"
 
+rule-providers:
+  oisd_big:
+    type: http
+    behavior: classical
+    path: "./rule_provider/oisd_big.yaml"
+    url: https://raw.githubusercontent.com/hillz2/openclash_adblock/main/oisd_big.yaml
+    interval: 28800 # Update rules every 8 hours
+
 rules:
+
+# AdBlock
+- RULE-SET,oisd_big,REJECT
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
 # ACL4SSR标志 如没有，代表不是用ACL4SSR规则
@@ -5511,4 +5522,4 @@ rules:
   - IP-CIDR,101.198.192.0/19,🎯 全球直连 (Koneksi Langsung Global),no-resolve
   - IP-CIDR,101.199.196.0/22,🎯 全球直连 (Koneksi Langsung Global),no-resolve
   - GEOIP,CN,🎯 全球直连 (Koneksi Langsung Global)
-  - MATCH,🐟 
+  - MATCH,🐟 漏网之鱼 (Ikan yang Terlewatkan)
