@@ -6,7 +6,7 @@ mode: rule
 log-level: info
 ipv6: true
 external-controller: 0.0.0.0:9090
-external-ui: /etc/mihomo/ui
+external-ui: "/metacubexd-main"
 experimental:
   ignore-resolve-fail: true
 dns:

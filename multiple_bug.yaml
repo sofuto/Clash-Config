@@ -87,7 +87,7 @@ allow-lan: true
 external-controller: 0.0.0.0:9090
 secret: Amanah
 bind-address: "*"
-external-ui: "/usr/share/openclash/ui"
+external-ui: "/metacubexd-main"
 ipv6: false
 profile:
   store-selected: true
