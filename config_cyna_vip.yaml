@@ -216,7 +216,14 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择 (Pemilihan Otomatis) 
+      - ♻️ Load-Balance 
       - DIRECT
+  - name: ♻️ 自动选择 (Pemilihan Otomatis) 
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
       - "Vless_2"
       - "Vless_3"
       - "Vless_4"
@@ -226,11 +233,11 @@ proxy-groups:
       - "Vless-ikozu-WS (CDN) Non TLS"
       - "VLESS-sg1.porpuse.cfd"
       - "VLESS-my1.porpuse.cfd"
-  - name: ♻️ 自动选择 (Pemilihan Otomatis) 
-    type: url-test
+  - name: ♻️ Load-Balance
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    strategy: consistent-hashing
     proxies:
       - "Vless_2"
       - "Vless_3"
