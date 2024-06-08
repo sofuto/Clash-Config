@@ -1,40 +1,134 @@
-
-port: 7890
-socks-port: 7891
-redir-port: 7892
-mixed-port: 7893
-mode: rule
-log-level: silent
+mixed-port: 10809
+tproxy-port: 7893
 allow-lan: true
-external-controller: 0.0.0.0:9090
 bind-address: "*"
-ipv6: false
+mode: rule
+log-level: info
+ipv6: true
+external-controller: 0.0.0.0:9090
+experimental:
+  ignore-resolve-fail: true
 dns:
   enable: true
-  ipv6: false
+  listen: 127.0.0.1:1053
   enhanced-mode: fake-ip
-  listen: 0.0.0.0:7894
-  fallback-filter:
-    geoip: false
-    ipcidr:
-    - 240.0.0.0/4
+  fake-ip-range: 198.18.0.1/16
   nameserver:
-    - https://puredns.org/dns-query
-    - tls://puredns.org:853
-  fallback:
-    - tcp://108.137.44.39
-    - tcp://108.137.44.9
-    - 108.137.44.39
-    - 108.137.44.9
+    - 8.8.8.8
+    - 1.1.1.1
+    - 112.215.203.254
 tun:
-  enable: true
-  stack: system 
+  enable: false
   macOS-auto-route: true
   macOS-auto-detect-interface: true
-  dns-hijack:
-    - tcp://108.137.44.39:53
-experimental:
-  interface-name: en0
+  
+line: &line
+  type: select
+  proxies:
+    - Select
+    - Auto
+    - Load Balance
+    - Iklan
+
+proxy: &proxy
+    proxies:
+      - "[Vless] UWU OWO UMU"
+      - "[Vless] UWU OWO UMU 2"
+      - "[Vless] UWU OWO UMU 3"
+      - "[Vless] UWU OWO UMU 4"
+      - "[Vless] UWU OWO UMU 5"
+      - "[Vless] UWU OWO UMU 6"
+      - "[Vless] UWU OWO UMU 7"
+      - "[Vless] UWU OWO UMU 8"
+      - "[Vless] UWU OWO UMU 9"
+      - "[Vless] UWU OWO UMU 10"
+      - "[Vless] UWU OWO UMU 11"
+      - "[Vless] UWU OWO UMU 12"
+      - "[Vless] UWU OWO UMU 13"
+      - "[Vless] UWU OWO UMU 14"
+      - "[Vless] UWU OWO UMU 15"
+      - "[Vless] UWU OWO UMU 16"
+      - "[Vless] UWU OWO UMU 17"
+      - "[Vless] UWU OWO UMU 18"
+      - "[Vless] UWU OWO UMU 19"
+      - "[Vless] UWU OWO UMU 20"
+      - "[Vless] UWU OWO UMU 21"
+      - "[Vless] UWU OWO UMU 22"
+      - "[Vless] UWU OWO UMU 23"
+      - "[Vless] UWU OWO UMU 24"
+      - "[Vless] UWU OWO UMU 25"
+      - "[Vless] UWU OWO UMU 26"
+      - "[Vless] UWU OWO UMU 27"
+      - "[Vless] UWU OWO UMU 28"
+      - "[Vless] UWU OWO UMU 29"
+      - "[Vless] UWU OWO UMU 30"
+      - "[Vless] UWU OWO UMU 31"
+      - "[Vless] UWU OWO UMU 32"
+      - "[Vless] UWU OWO UMU 33"
+      - "[Vless] UWU OWO UMU 34"
+      - "[Vless] UWU OWO UMU 35"
+      - "[Vless] UWU OWO UMU 36"
+      - "[Vless] UWU OWO UMU 37"
+      - "[Vless] UWU OWO UMU 38"
+      - "[Vless] UWU OWO UMU 39"
+      - "[Vless] UWU OWO UMU 40"
+      - "[Vless] UWU OWO UMU 41"
+      - "[Vless] UWU OWO UMU 42"
+      - "[Vless] UWU OWO UMU 43"
+      - "[Vless] UWU OWO UMU 44"
+      - "[Vless] UWU OWO UMU 45"
+      - "[Vless] UWU OWO UMU 46"
+      - "[Vless] UWU OWO UMU 47"
+      - "[Vless] UWU OWO UMU 48"
+      - "[Vless] UWU OWO UMU 49"
+      - "[Vless] UWU OWO UMU 50"
+      - "[Vless] UWU OWO UMU 51"
+      - "[Vless] UWU OWO UMU 52"
+      - "[Trojan] UWU OWO UMU"
+      - "[Vless] UWU OWO UMU 53"
+      - "[Vless] UWU OWO UMU 54"
+      - "[Vless] UWU OWO UMU 55"
+      - "[Vless] UWU OWO UMU 56"
+      - "[Vless] UWU OWO UMU 57"
+      - "[Vless] UWU OWO UMU 58"
+      - "[Trojan] UWU OWO UMU 2"
+      - "[Trojan] UWU OWO UMU 3"
+      - "[Trojan] UWU OWO UMU 4"
+      - "[Trojan] UWU OWO UMU 5"
+      - "[Trojan] UWU OWO UMU 6"
+      - "[Trojan] UWU OWO UMU 7"
+      - "[Trojan] UWU OWO UMU 8"
+      - "[Trojan] UWU OWO UMU 9"
+      - "[Trojan] UWU OWO UMU 10"
+      - "[VMess] UWU OWO UMU"
+      - "[VMess] UWU OWO UMU 2"
+      - "[VMess] UWU OWO UMU 3"
+      - "[VMess] UWU OWO UMU 4"
+      - "[VMess] UWU OWO UMU 5"
+      - "[VMess] UWU OWO UMU 6"
+      - "[VMess] UWU OWO UMU 7"
+      - "[VMess] UWU OWO UMU 8"
+      - "[VMess] UWU OWO UMU 9"
+      - "[VMess] UWU OWO UMU 10"
+      - "[VMess] UWU OWO UMU 11"
+      - "[VMess] UWU OWO UMU 12"
+
+select: &select
+  type: select
+  <<: *proxy
+
+auto: &auto
+  type: url-test
+  <<: *proxy
+  url: 'https://clients3.google.com'
+  interval: 300
+
+lb: &lb
+  type: load-balance
+  <<: *proxy
+  url: 'https://clients3.google.com'
+  interval: 300
+  strategy: consistent-hashing # atau round-robin
 #VLESS
 proxies:
   - name: "[Vless] UWU OWO UMU"
@@ -1000,7 +1094,7 @@ proxies:
     type: trojan
     password: auto
     skip-cert-verify: true
-    sni: 1.1
+    sni: "1.1"
     network: ws
     ws-opts:
       path: ?sni=proxyIP=proxyip.oracle.fxxk.dedyn.io
@@ -1013,7 +1107,7 @@ proxies:
     type: trojan
     password: eqUjIxW5S5
     skip-cert-verify: true
-    sni: 1.1
+    sni: "1.1"
     network: ws
     ws-opts:
       path: ?sni=
@@ -1026,7 +1120,7 @@ proxies:
     type: trojan
     password: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
     skip-cert-verify: true
-    sni: 1.1
+    sni: "1.1"
     network: ws
     ws-opts:
       path: ?sni=Q177OZ8bzrxRWBtLTlTL
@@ -1225,93 +1319,29 @@ proxies:
       headers:
         Host: Pl2.vmess.site.
     udp: true
+
 proxy-groups:
-  - name: sshkit-generator
-    type: load-balance
-    url: 'https://clients3.google.com'
-    interval: 300
-    strategy: consistent-hashing
+  - name: Proxy
+    <<: *line
+  - name: Iklan
+    type: select
     proxies:
-      - "[Vless] UWU OWO UMU"
-      - "[Vless] UWU OWO UMU 2"
-      - "[Vless] UWU OWO UMU 3"
-      - "[Vless] UWU OWO UMU 4"
-      - "[Vless] UWU OWO UMU 5"
-      - "[Vless] UWU OWO UMU 6"
-      - "[Vless] UWU OWO UMU 7"
-      - "[Vless] UWU OWO UMU 8"
-      - "[Vless] UWU OWO UMU 9"
-      - "[Vless] UWU OWO UMU 10"
-      - "[Vless] UWU OWO UMU 11"
-      - "[Vless] UWU OWO UMU 12"
-      - "[Vless] UWU OWO UMU 13"
-      - "[Vless] UWU OWO UMU 14"
-      - "[Vless] UWU OWO UMU 15"
-      - "[Vless] UWU OWO UMU 16"
-      - "[Vless] UWU OWO UMU 17"
-      - "[Vless] UWU OWO UMU 18"
-      - "[Vless] UWU OWO UMU 19"
-      - "[Vless] UWU OWO UMU 20"
-      - "[Vless] UWU OWO UMU 21"
-      - "[Vless] UWU OWO UMU 22"
-      - "[Vless] UWU OWO UMU 23"
-      - "[Vless] UWU OWO UMU 24"
-      - "[Vless] UWU OWO UMU 25"
-      - "[Vless] UWU OWO UMU 26"
-      - "[Vless] UWU OWO UMU 27"
-      - "[Vless] UWU OWO UMU 28"
-      - "[Vless] UWU OWO UMU 29"
-      - "[Vless] UWU OWO UMU 30"
-      - "[Vless] UWU OWO UMU 31"
-      - "[Vless] UWU OWO UMU 32"
-      - "[Vless] UWU OWO UMU 33"
-      - "[Vless] UWU OWO UMU 34"
-      - "[Vless] UWU OWO UMU 35"
-      - "[Vless] UWU OWO UMU 36"
-      - "[Vless] UWU OWO UMU 37"
-      - "[Vless] UWU OWO UMU 38"
-      - "[Vless] UWU OWO UMU 39"
-      - "[Vless] UWU OWO UMU 40"
-      - "[Vless] UWU OWO UMU 41"
-      - "[Vless] UWU OWO UMU 42"
-      - "[Vless] UWU OWO UMU 43"
-      - "[Vless] UWU OWO UMU 44"
-      - "[Vless] UWU OWO UMU 45"
-      - "[Vless] UWU OWO UMU 46"
-      - "[Vless] UWU OWO UMU 47"
-      - "[Vless] UWU OWO UMU 48"
-      - "[Vless] UWU OWO UMU 49"
-      - "[Vless] UWU OWO UMU 50"
-      - "[Vless] UWU OWO UMU 51"
-      - "[Vless] UWU OWO UMU 52"
-      - "[Trojan] UWU OWO UMU"
-      - "[Vless] UWU OWO UMU 53"
-      - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
-      - "[Vless] UWU OWO UMU 56"
-      - "[Vless] UWU OWO UMU 57"
-      - "[Vless] UWU OWO UMU 58"
-      - "[Trojan] UWU OWO UMU 2"
-      - "[Trojan] UWU OWO UMU 3"
-      - "[Trojan] UWU OWO UMU 4"
-      - "[Trojan] UWU OWO UMU 5"
-      - "[Trojan] UWU OWO UMU 6"
-      - "[Trojan] UWU OWO UMU 7"
-      - "[Trojan] UWU OWO UMU 8"
-      - "[Trojan] UWU OWO UMU 9"
-      - "[Trojan] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU"
-      - "[VMess] UWU OWO UMU 2"
-      - "[VMess] UWU OWO UMU 3"
-      - "[VMess] UWU OWO UMU 4"
-      - "[VMess] UWU OWO UMU 5"
-      - "[VMess] UWU OWO UMU 6"
-      - "[VMess] UWU OWO UMU 7"
-      - "[VMess] UWU OWO UMU 8"
-      - "[VMess] UWU OWO UMU 9"
-      - "[VMess] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU 11"
-      - "[VMess] UWU OWO UMU 12"
+      - REJECT
+      - DIRECT
+  - name: Select
+    <<: *select
+  - name: Auto
+    <<: *auto
+  - name: Load Balance
+    <<: *lb
+
+rule-providers:
+  adblock:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Advertising/Advertising_No_Resolve.yaml"
+    interval: 600
 
 rules:
- - MATCH,sshkit-generator
+  - RULE-SET,adblock,Iklan
+  - MATCH,Proxy
