@@ -39,6 +39,9 @@ proxy: &proxy
     - "Vless_6"
     - "Vless-ikozu-WS TLS"
     - "Vless-ikozu-WS (CDN) Non TLS"
+    - "VLESS-sg1.porpuse.cfd"
+    - "VLESS-my1.porpuse.cfd"
+    
 select: &select
   type: select
   <<: *proxy
@@ -158,6 +161,36 @@ proxies:
       path: /vless
       headers:
         Host: vpn.paikozu.my.id
+    udp: true
+  - name: "VLESS-sg1.porpuse.cfd"
+    server: quiz.staging.vidio.com
+    port: 443
+    type: vless
+    uuid: dfc3ad71-4ab8-424e-b5f7-965d18153ccb
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: sg1.porpuse.cfd
+    network: ws
+    ws-opts:
+      path: /vless-bodong
+      headers:
+        Host: sg1.porpuse.cfd
+    udp: true
+  - name: "VLESS-my1.porpuse.cfd"
+    server: quiz.staging.vidio.com
+    port: 443
+    type: vless
+    uuid: dfc3ad71-4ab8-424e-b5f7-965d18153ccb
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: my1.porpuse.cfd
+    network: ws
+    ws-opts:
+      path: /vless-bodong
+      headers:
+        Host: my1.porpuse.cfd
     udp: true
 proxy-groups:
   - name: Proxy
