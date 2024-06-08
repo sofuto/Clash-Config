@@ -16,11 +16,12 @@ akun: &ws
 
 proxies:
   - name: A1
-    <<: *ws
     server: quiz.vidio.com
+    <<: *ws
   - name: A2
-    <<: *ws
     server: quiz.int.vidio.com
-  - name: A3
     <<: *ws
+  - name: A3
     server: quiz.staging.vidio.com
+    <<: *ws
+    
