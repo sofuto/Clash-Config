@@ -1884,7 +1884,6 @@ proxy-groups:
       - "[VMess] UWU OWO UMU 12"
 
 rules:
-rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
 # ACL4SSR标志 如没有，代表不是用ACL4SSR规则
