@@ -1271,7 +1271,8 @@ proxy-groups:
   - name: 🚀 节点选择 (Pemilihan Node) 
     type: select
     proxies:
-      - ♻️ 自动选择 (Pemilihan Otomatis) 
+      - ♻️ 自动选择 (Pemilihan Otomatis)
+      - ♻️ Load-Balance 
       - DIRECT
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
@@ -1439,11 +1440,98 @@ proxy-groups:
       - "[VMess] UWU OWO UMU 10"
       - "[VMess] UWU OWO UMU 11"
       - "[VMess] UWU OWO UMU 12"
+  - name: ♻️ Load-Balance
+    type: load-balance
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    strategy: consistent-hashing
+    proxies:
+      - "[Vless] UWU OWO UMU"
+      - "[Vless] UWU OWO UMU 2"
+      - "[Vless] UWU OWO UMU 3"
+      - "[Vless] UWU OWO UMU 4"
+      - "[Vless] UWU OWO UMU 5"
+      - "[Vless] UWU OWO UMU 6"
+      - "[Vless] UWU OWO UMU 7"
+      - "[Vless] UWU OWO UMU 8"
+      - "[Vless] UWU OWO UMU 9"
+      - "[Vless] UWU OWO UMU 10"
+      - "[Vless] UWU OWO UMU 11"
+      - "[Vless] UWU OWO UMU 12"
+      - "[Vless] UWU OWO UMU 13"
+      - "[Vless] UWU OWO UMU 14"
+      - "[Vless] UWU OWO UMU 15"
+      - "[Vless] UWU OWO UMU 16"
+      - "[Vless] UWU OWO UMU 17"
+      - "[Vless] UWU OWO UMU 18"
+      - "[Vless] UWU OWO UMU 19"
+      - "[Vless] UWU OWO UMU 20"
+      - "[Vless] UWU OWO UMU 21"
+      - "[Vless] UWU OWO UMU 22"
+      - "[Vless] UWU OWO UMU 23"
+      - "[Vless] UWU OWO UMU 24"
+      - "[Vless] UWU OWO UMU 25"
+      - "[Vless] UWU OWO UMU 26"
+      - "[Vless] UWU OWO UMU 27"
+      - "[Vless] UWU OWO UMU 28"
+      - "[Vless] UWU OWO UMU 29"
+      - "[Vless] UWU OWO UMU 30"
+      - "[Vless] UWU OWO UMU 31"
+      - "[Vless] UWU OWO UMU 32"
+      - "[Vless] UWU OWO UMU 33"
+      - "[Vless] UWU OWO UMU 34"
+      - "[Vless] UWU OWO UMU 35"
+      - "[Vless] UWU OWO UMU 36"
+      - "[Vless] UWU OWO UMU 37"
+      - "[Vless] UWU OWO UMU 38"
+      - "[Vless] UWU OWO UMU 39"
+      - "[Vless] UWU OWO UMU 40"
+      - "[Vless] UWU OWO UMU 41"
+      - "[Vless] UWU OWO UMU 42"
+      - "[Vless] UWU OWO UMU 43"
+      - "[Vless] UWU OWO UMU 44"
+      - "[Vless] UWU OWO UMU 45"
+      - "[Vless] UWU OWO UMU 46"
+      - "[Vless] UWU OWO UMU 47"
+      - "[Vless] UWU OWO UMU 48"
+      - "[Vless] UWU OWO UMU 49"
+      - "[Vless] UWU OWO UMU 50"
+      - "[Vless] UWU OWO UMU 51"
+      - "[Vless] UWU OWO UMU 52"
+      - "[Trojan] UWU OWO UMU"
+      - "[Vless] UWU OWO UMU 53"
+      - "[Vless] UWU OWO UMU 54"
+      - "[Vless] UWU OWO UMU 55"
+      - "[Vless] UWU OWO UMU 56"
+      - "[Vless] UWU OWO UMU 57"
+      - "[Vless] UWU OWO UMU 58"
+      - "[Trojan] UWU OWO UMU 2"
+      - "[Trojan] UWU OWO UMU 3"
+      - "[Trojan] UWU OWO UMU 4"
+      - "[Trojan] UWU OWO UMU 5"
+      - "[Trojan] UWU OWO UMU 6"
+      - "[Trojan] UWU OWO UMU 7"
+      - "[Trojan] UWU OWO UMU 8"
+      - "[Trojan] UWU OWO UMU 9"
+      - "[Trojan] UWU OWO UMU 10"
+      - "[VMess] UWU OWO UMU"
+      - "[VMess] UWU OWO UMU 2"
+      - "[VMess] UWU OWO UMU 3"
+      - "[VMess] UWU OWO UMU 4"
+      - "[VMess] UWU OWO UMU 5"
+      - "[VMess] UWU OWO UMU 6"
+      - "[VMess] UWU OWO UMU 7"
+      - "[VMess] UWU OWO UMU 8"
+      - "[VMess] UWU OWO UMU 9"
+      - "[VMess] UWU OWO UMU 10"
+      - "[VMess] UWU OWO UMU 11"
+      - "[VMess] UWU OWO UMU 12"
   - name: 🌍 国外媒体 (Media Luar Negeri) 
     type: select
     proxies:
       - 🚀 节点选择 (Pemilihan Node) 
-      - ♻️ 自动选择 (Pemilihan Otomatis) 
+      - ♻️ 自动选择 (Pemilihan Otomatis)
+      - ♻️ Load-Balance 
       - 🎯 全球直连 (Koneksi Langsung Global) 
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
@@ -1785,7 +1873,8 @@ proxy-groups:
     proxies:
       - DIRECT
       - 🚀 节点选择 (Pemilihan Node) 
-      - ♻️ 自动选择 (Pemilihan Otomatis) 
+      - ♻️ 自动选择 (Pemilihan Otomatis)
+      - ♻️ Load-Balance 
   - name: 🛑 全球拦截 (Pencegatan Global) 
     type: select
     proxies:
@@ -1802,6 +1891,7 @@ proxy-groups:
       - 🚀 节点选择 (Pemilihan Node) 
       - 🎯 全球直连 (Koneksi Langsung Global) 
       - ♻️ 自动选择 (Pemilihan Otomatis) 
+      - ♻️ Load-Balance 
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
       - "[Vless] UWU OWO UMU 3"
