@@ -1,0 +1,26 @@
+proxies:
+  - name: Trojan-paikozu-GO/WS
+    server: quiz.staging.vidio.com
+    port: 443
+    type: trojan
+    password: 87d80f0f-bdb5-43b1-a8a9-1716c16021ce
+    skip-cert-verify: true
+    sni: vpn.paikozu.my.id
+    network: ws
+    ws-opts:
+      path: /trojan-ws
+      headers:
+        Host: vpn.paikozu.my.id
+    udp: true
+
+  - name: Trojan-paikozu-gRPC
+    server: vpn.paikozu.my.id
+    port: 443
+    type: trojan
+    password:  87d80f0f-bdb5-43b1-a8a9-1716c16021ce
+    skip-cert-verify: true
+    sni: static-web.prod.vidiocdn.com
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-grpc
+    udp: true
