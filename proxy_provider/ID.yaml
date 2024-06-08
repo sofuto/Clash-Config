@@ -1,27 +1,43 @@
 #AKUN WS
 akun: &ws
     port: 443
-    type: vless
-    uuid: 5275120b-85ea-44d0-b052-3e07875a2008
-    cipher: auto
-    tls: true
+    type: trojan
+    password: 87d80f0f-bdb5-43b1-a8a9-1716c16021ce
     skip-cert-verify: true
-    servername: vpn.paikozu.my.id
+    sni: vpn.paikozu.my.id
     network: ws
     ws-opts:
-      path: /vless
+      path: /trojan-ws
       headers:
         Host: vpn.paikozu.my.id
+    udp: true
+#AKUN SNI
+akun2: &sni
+    port: 443
+    type: trojan
+    password:  87d80f0f-bdb5-43b1-a8a9-1716c16021ce
+    skip-cert-verify: true
+    network: grpc
+    grpc-opts:
+      grpc-service-name: trojan-grpc
     udp: true
 
 proxies:
   - name: A1
+    <<: *ws
     server: quiz.vidio.com
-    <<: *ws
   - name: A2
+    <<: *ws
     server: quiz.int.vidio.com
-    <<: *ws
   - name: A3
-    server: quiz.staging.vidio.com
     <<: *ws
-    
+    server: quiz.staging.vidio.com
+  - name: S1
+    <<: *sni
+    sni: static-web.prod.vidiocdn.com
+  - name: S2
+    <<: *sni
+    sni: sb.scorecardresearch.com
+  - name: S3
+    <<: *sni
+    sni: token-media-vidio-com.akamaized.net
