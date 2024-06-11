@@ -104,33 +104,33 @@ proxies:
     udp: true
   - name: "[Vless] UWU OWO UMU 2"
     server: quiz.staging.vidio.com
-    port: 443
+    port: 8443
     type: vless
-    uuid: 5dc23bba-0e31-4016-895f-517ce4b7ccc0
+    uuid: 9a39f63e-28c8-4560-af18-b01b9916ef1b
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: glassiest.toptechnonews.com
+    servername: pardazesh-tgws.pages.dev
     network: ws
     ws-opts:
-      path: /nimws
+      path: /?ed=2048
       headers:
-        Host: glassiest.toptechnonews.com
+        Host: pardazesh-tgws.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 3"
     server: quiz.staging.vidio.com
-    port: 443
+    port: 8443
     type: vless
-    uuid: f4f69ee1-09df-4ca2-a002-89ee0ec8156a
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: accolade.toptechnonews.com
+    servername: jp111.ylks01.eu.org
     network: ws
     ws-opts:
-      path: /nimws
+      path: /blue
       headers:
-        Host: accolade.toptechnonews.com
+        Host: jp111.ylks01.eu.org
     udp: true
   - name: "[Vless] UWU OWO UMU 4"
     server: quiz.staging.vidio.com
@@ -629,18 +629,18 @@ proxies:
     udp: true
   - name: "[Vless] UWU OWO UMU 37"
     server: quiz.staging.vidio.com
-    port: 80
+    port: 443
     type: vless
-    uuid: 38928290-00af-4255-9006-57df913e1f95
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
     cipher: auto
-    tls: false
+    tls: true
     skip-cert-verify: true
-    servername: 1958745061.v2rAy.14030313.speedtest.net.parSpaCk.coM.pCi.ir.xn--10-cg7e.xn--4oqa52uba3842Dca.kiNg4uSd.sHop.
+    servername: zdy111.kpcloud.eu.org
     network: ws
     ws-opts:
-      path: /@custom_config?ed=2056
+      path: /?ed
       headers:
-        Host: 1958745061.v2rAy.14030313.speedtest.net.parSpaCk.coM.pCi.ir.xn--10-cg7e.xn--4oqa52uba3842Dca.kiNg4uSd.sHop.
+        Host: zdy111.kpcloud.eu.org
     udp: true
   - name: "[Vless] UWU OWO UMU 38"
     server: quiz.staging.vidio.com
@@ -689,48 +689,48 @@ proxies:
     udp: true
   - name: "[Vless] UWU OWO UMU 41"
     server: quiz.staging.vidio.com
-    port: 443
+    port: 80
     type: vless
-    uuid: 3aba5555-571f-4b37-b686-66ced3447919
+    uuid: d9a23a1d-853e-4b53-b5f9-351b3f1fca2f
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
-    servername: xcl.aframdani.cloud
+    servername: Uk1.vless.site.
     network: ws
     ws-opts:
-      path: /vless-ws
+      path: /vless
       headers:
-        Host: xcl.aframdani.cloud
+        Host: Uk1.vless.site.
     udp: true
   - name: "[Vless] UWU OWO UMU 42"
     server: quiz.staging.vidio.com
-    port: 8880
+    port: 8443
+    type: vless
+    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    servername: jp111.ylks01.eu.org
+    network: ws
+    ws-opts:
+      path: /blue
+      headers:
+        Host: jp111.ylks01.eu.org
+    udp: true
+  - name: "[Vless] UWU OWO UMU 43"
+    server: quiz.staging.vidio.com
+    port: 2095
     type: vless
     uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
     cipher: auto
     tls: false
     skip-cert-verify: true
-    servername: kk600.ylks.link
+    servername: kk111.ylks.link
     network: ws
     ws-opts:
       path: /youtube-由零開始
       headers:
-        Host: kk600.ylks.link
-    udp: true
-  - name: "[Vless] UWU OWO UMU 43"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: 19477f96-ea81-4f5b-93e7-119a171a7813
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: safe.footballlovernews.com
-    network: ws
-    ws-opts:
-      path: /safe
-      headers:
-        Host: safe.footballlovernews.com
+        Host: kk111.ylks.link
     udp: true
   - name: "[Vless] UWU OWO UMU 44"
     server: quiz.staging.vidio.com
@@ -796,16 +796,16 @@ proxies:
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: eb0a9882-61ae-40ae-ae5a-b42771fbf65a
+    uuid: 17a7bf97-fef5-4101-a5c5-7c730fabeeee
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: nl-full.privateip.net
+    servername: bpb-worker-panel-h5f.pages.dev
     network: ws
     ws-opts:
-      path: /VLESS
+      path: telegram-proxy_mtm/?ed=2048
       headers:
-        Host: nl-full.privateip.net
+        Host: bpb-worker-panel-h5f.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 49"
     server: quiz.staging.vidio.com
@@ -897,16 +897,16 @@ proxies:
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 03728bdd-745c-4ef6-a01f-70b006d3bbae
+    uuid: 6d154bf6-d60c-11ee-aaa8-00505603e70d
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: thorianite.toptechnonews.com
+    servername: st-fr-1.brocdn.com
     network: ws
     ws-opts:
-      path: /nimws
+      path: /websocket?ed=@MARAMBASHI,@MARAMBASHI,@MARAMBASHI,@MARAMBASHI
       headers:
-        Host: thorianite.toptechnonews.com
+        Host: st-fr-1.brocdn.com
     udp: true
   - name: "[Vless] UWU OWO UMU 55"
     server: quiz.staging.vidio.com
@@ -925,33 +925,33 @@ proxies:
     udp: true
   - name: "[Vless] UWU OWO UMU 56"
     server: quiz.staging.vidio.com
-    port: 443
+    port: 8443
     type: vless
-    uuid: ff3c4db3-2259-479e-a0e0-7af7d1d429db
+    uuid: 40bd0854-8a76-428a-993d-fea77db2a59d
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: shaliest.toptechnonews.com
+    servername: telegram-falcunargo-stoniya.falcunar.asso.eu.org.
     network: ws
     ws-opts:
-      path: /nimws
+      path: /
       headers:
-        Host: shaliest.toptechnonews.com
+        Host: telegram-falcunargo-stoniya.falcunar.asso.eu.org.
     udp: true
   - name: "[Vless] UWU OWO UMU 57"
     server: quiz.staging.vidio.com
-    port: 443
+    port: 80
     type: vless
-    uuid: 66dfb5f2-1c63-4d82-94a7-0915bedd93b9
+    uuid: a35017af-d228-44bd-885c-e5951ce09df6
     cipher: auto
-    tls: true
+    tls: false
     skip-cert-verify: true
-    servername: knocked.aurorainiceland.com
+    servername: dl6.heykakenakhshanemvaberanakhshanemkhadijeomanigakobraoaminfatema.com
     network: ws
     ws-opts:
-      path: /nimws?ed=@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi
+      path: Mmdv2rayng-V2rayngmmd-telegram-mmd_v2rayng?ed=80
       headers:
-        Host: knocked.aurorainiceland.com
+        Host: dl6.heykakenakhshanemvaberanakhshanemkhadijeomanigakobraoaminfatema.com
     udp: true
   - name: "[Vless] UWU OWO UMU 58"
     server: quiz.staging.vidio.com
@@ -1033,16 +1033,18 @@ proxies:
     udp: true
   - name: "[Trojan] UWU OWO UMU 7"
     server: quiz.staging.vidio.com
-    port: 443
-    type: trojan
-    password: b4e8771997c94732acbc9ec4d19c2589
+    port: 80
+    type: vless
+    uuid: 6eccc692-3876-41a8-cfb9-65da484f097e
+    cipher: auto
+    tls: false
     skip-cert-verify: true
-    sni: 6b777a91
+    servername: dlrozaneh.ir.
     network: ws
     ws-opts:
-      path: ?sni=6b777a91
+      path: /V2ray?ed=2048
       headers:
-        Host: bangladeshipatri.com
+        Host: dlrozaneh.ir.
     udp: true
   - name: "[Trojan] UWU OWO UMU 8"
     server: quiz.staging.vidio.com
