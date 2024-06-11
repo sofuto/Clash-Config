@@ -117,21 +117,6 @@ proxies:
       headers:
         Host: pardazesh-tgws.pages.dev
     udp: true
-  - name: "[Vless] UWU OWO UMU 3"
-    server: quiz.staging.vidio.com
-    port: 8443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: jp111.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /blue
-      headers:
-        Host: jp111.ylks01.eu.org
-    udp: true
   - name: "[Vless] UWU OWO UMU 4"
     server: quiz.staging.vidio.com
     port: 443
@@ -627,21 +612,6 @@ proxies:
       headers:
         Host: rsfndc1.cpiforpersia.uk
     udp: true
-  - name: "[Vless] UWU OWO UMU 37"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: zdy111.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed
-      headers:
-        Host: zdy111.kpcloud.eu.org
-    udp: true
   - name: "[Vless] UWU OWO UMU 38"
     server: quiz.staging.vidio.com
     port: 8443
@@ -672,21 +642,6 @@ proxies:
       headers:
         Host: ca.vpnbase.net
     udp: true
-  - name: "[Vless] UWU OWO UMU 40"
-    server: quiz.staging.vidio.com
-    port: 8080
-    type: vless
-    uuid: 1e248837-a2d0-4d87-9358-ba2a91daf6cc
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: 2.v2ray.debian.org.fxp.debian.org.speedtest.net.secretshop.tech
-    network: ws
-    ws-opts:
-      path: /SvnProBot-V2ray69Speed.ir.shop.com?ed=2048
-      headers:
-        Host: 2.v2ray.debian.org.fxp.debian.org.speedtest.net.secretshop.tech
-    udp: true
   - name: "[Vless] UWU OWO UMU 41"
     server: quiz.staging.vidio.com
     port: 80
@@ -701,36 +656,6 @@ proxies:
       path: /vless
       headers:
         Host: Uk1.vless.site.
-    udp: true
-  - name: "[Vless] UWU OWO UMU 42"
-    server: quiz.staging.vidio.com
-    port: 8443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: jp111.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /blue
-      headers:
-        Host: jp111.ylks01.eu.org
-    udp: true
-  - name: "[Vless] UWU OWO UMU 43"
-    server: quiz.staging.vidio.com
-    port: 2095
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: kk111.ylks.link
-    network: ws
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        Host: kk111.ylks.link
     udp: true
   - name: "[Vless] UWU OWO UMU 44"
     server: quiz.staging.vidio.com
@@ -972,7 +897,6 @@ proxy-groups:
     proxies:
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-      - "[Vless] UWU OWO UMU 3"
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1004,15 +928,15 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 32"
       - "[Vless] UWU OWO UMU 33"
       - "[Vless] UWU OWO UMU 34"
-      - "[Vless] UWU OWO UMU 35"
+
       - "[Vless] UWU OWO UMU 36"
-      - "[Vless] UWU OWO UMU 37"
+
       - "[Vless] UWU OWO UMU 38"
       - "[Vless] UWU OWO UMU 39"
-      - "[Vless] UWU OWO UMU 40"
+
       - "[Vless] UWU OWO UMU 41"
-      - "[Vless] UWU OWO UMU 42"
-      - "[Vless] UWU OWO UMU 43"
+
+
       - "[Vless] UWU OWO UMU 44"
       - "[Vless] UWU OWO UMU 45"
       - "[Vless] UWU OWO UMU 46"
@@ -1036,7 +960,7 @@ proxy-groups:
     proxies:
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-      - "[Vless] UWU OWO UMU 3"
+
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1068,15 +992,15 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 32"
       - "[Vless] UWU OWO UMU 33"
       - "[Vless] UWU OWO UMU 34"
-      - "[Vless] UWU OWO UMU 35"
+
       - "[Vless] UWU OWO UMU 36"
-      - "[Vless] UWU OWO UMU 37"
+
       - "[Vless] UWU OWO UMU 38"
       - "[Vless] UWU OWO UMU 39"
-      - "[Vless] UWU OWO UMU 40"
+
       - "[Vless] UWU OWO UMU 41"
-      - "[Vless] UWU OWO UMU 42"
-      - "[Vless] UWU OWO UMU 43"
+
+
       - "[Vless] UWU OWO UMU 44"
       - "[Vless] UWU OWO UMU 45"
       - "[Vless] UWU OWO UMU 46"
@@ -1101,7 +1025,7 @@ proxy-groups:
       - 🎯 全球直连 (Koneksi Langsung Global) 
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-      - "[Vless] UWU OWO UMU 3"
+
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1133,15 +1057,15 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 32"
       - "[Vless] UWU OWO UMU 33"
       - "[Vless] UWU OWO UMU 34"
-      - "[Vless] UWU OWO UMU 35"
+
       - "[Vless] UWU OWO UMU 36"
-      - "[Vless] UWU OWO UMU 37"
+
       - "[Vless] UWU OWO UMU 38"
       - "[Vless] UWU OWO UMU 39"
-      - "[Vless] UWU OWO UMU 40"
+
       - "[Vless] UWU OWO UMU 41"
-      - "[Vless] UWU OWO UMU 42"
-      - "[Vless] UWU OWO UMU 43"
+
+
       - "[Vless] UWU OWO UMU 44"
       - "[Vless] UWU OWO UMU 45"
       - "[Vless] UWU OWO UMU 46"
@@ -1164,7 +1088,7 @@ proxy-groups:
       - 🎯 全球直连 (Koneksi Langsung Global) 
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-      - "[Vless] UWU OWO UMU 3"
+
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1196,15 +1120,15 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 32"
       - "[Vless] UWU OWO UMU 33"
       - "[Vless] UWU OWO UMU 34"
-      - "[Vless] UWU OWO UMU 35"
+
       - "[Vless] UWU OWO UMU 36"
-      - "[Vless] UWU OWO UMU 37"
+
       - "[Vless] UWU OWO UMU 38"
       - "[Vless] UWU OWO UMU 39"
-      - "[Vless] UWU OWO UMU 40"
+
       - "[Vless] UWU OWO UMU 41"
-      - "[Vless] UWU OWO UMU 42"
-      - "[Vless] UWU OWO UMU 43"
+
+
       - "[Vless] UWU OWO UMU 44"
       - "[Vless] UWU OWO UMU 45"
       - "[Vless] UWU OWO UMU 46"
@@ -1227,7 +1151,7 @@ proxy-groups:
       - 🚀 节点选择 (Pemilihan Node)
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-      - "[Vless] UWU OWO UMU 3"
+
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1259,15 +1183,15 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 32"
       - "[Vless] UWU OWO UMU 33"
       - "[Vless] UWU OWO UMU 34"
-      - "[Vless] UWU OWO UMU 35"
+
       - "[Vless] UWU OWO UMU 36"
-      - "[Vless] UWU OWO UMU 37"
+
       - "[Vless] UWU OWO UMU 38"
       - "[Vless] UWU OWO UMU 39"
-      - "[Vless] UWU OWO UMU 40"
+
       - "[Vless] UWU OWO UMU 41"
-      - "[Vless] UWU OWO UMU 42"
-      - "[Vless] UWU OWO UMU 43"
+
+
       - "[Vless] UWU OWO UMU 44"
       - "[Vless] UWU OWO UMU 45"
       - "[Vless] UWU OWO UMU 46"
@@ -1290,7 +1214,7 @@ proxy-groups:
       - 🎯 全球直连 (Koneksi Langsung Global) 
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-      - "[Vless] UWU OWO UMU 3"
+
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1322,15 +1246,15 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 32"
       - "[Vless] UWU OWO UMU 33"
       - "[Vless] UWU OWO UMU 34"
-      - "[Vless] UWU OWO UMU 35"
+
       - "[Vless] UWU OWO UMU 36"
-      - "[Vless] UWU OWO UMU 37"
+
       - "[Vless] UWU OWO UMU 38"
       - "[Vless] UWU OWO UMU 39"
-      - "[Vless] UWU OWO UMU 40"
+
       - "[Vless] UWU OWO UMU 41"
-      - "[Vless] UWU OWO UMU 42"
-      - "[Vless] UWU OWO UMU 43"
+
+
       - "[Vless] UWU OWO UMU 44"
       - "[Vless] UWU OWO UMU 45"
       - "[Vless] UWU OWO UMU 46"
@@ -1372,7 +1296,7 @@ proxy-groups:
       - ♻️ Load-Balance 
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-      - "[Vless] UWU OWO UMU 3"
+
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1404,15 +1328,15 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 32"
       - "[Vless] UWU OWO UMU 33"
       - "[Vless] UWU OWO UMU 34"
-      - "[Vless] UWU OWO UMU 35"
+
       - "[Vless] UWU OWO UMU 36"
-      - "[Vless] UWU OWO UMU 37"
+
       - "[Vless] UWU OWO UMU 38"
       - "[Vless] UWU OWO UMU 39"
-      - "[Vless] UWU OWO UMU 40"
+
       - "[Vless] UWU OWO UMU 41"
-      - "[Vless] UWU OWO UMU 42"
-      - "[Vless] UWU OWO UMU 43"
+
+
       - "[Vless] UWU OWO UMU 44"
       - "[Vless] UWU OWO UMU 45"
       - "[Vless] UWU OWO UMU 46"
