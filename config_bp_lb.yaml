@@ -822,21 +822,7 @@ proxies:
       headers:
         Host: st-fr-1.brocdn.com
     udp: true
-  - name: "[Vless] UWU OWO UMU 55"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: 3d9c4523-b2a2-4524-a591-ff141a35a9d3
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: tl6lnel9kb9nxlnce9bf.fars-news.org
-    network: ws
-    ws-opts:
-      path: /48773/CREATIVE
-      headers:
-        Host: tl6lnel9kb9nxlnce9bf.fars-news.org
-    udp: true
+
   - name: "[Vless] UWU OWO UMU 56"
     server: quiz.staging.vidio.com
     port: 8443
@@ -948,7 +934,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 52"
       - "[Vless] UWU OWO UMU 53"
       - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
+
       - "[Vless] UWU OWO UMU 56"
       - "[Vless] UWU OWO UMU 57"
       - "[Vless] UWU OWO UMU 58"
@@ -1012,7 +998,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 52"
       - "[Vless] UWU OWO UMU 53"
       - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
+
       - "[Vless] UWU OWO UMU 56"
       - "[Vless] UWU OWO UMU 57"
       - "[Vless] UWU OWO UMU 58"
@@ -1077,7 +1063,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 52"
       - "[Vless] UWU OWO UMU 53"
       - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
+
       - "[Vless] UWU OWO UMU 56"
       - "[Vless] UWU OWO UMU 57"
       - "[Vless] UWU OWO UMU 58"
@@ -1140,7 +1126,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 52"
       - "[Vless] UWU OWO UMU 53"
       - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
+
       - "[Vless] UWU OWO UMU 56"
       - "[Vless] UWU OWO UMU 57"
       - "[Vless] UWU OWO UMU 58"
@@ -1203,7 +1189,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 52"
       - "[Vless] UWU OWO UMU 53"
       - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
+
       - "[Vless] UWU OWO UMU 56"
       - "[Vless] UWU OWO UMU 57"
       - "[Vless] UWU OWO UMU 58"
@@ -1266,7 +1252,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 52"
       - "[Vless] UWU OWO UMU 53"
       - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
+
       - "[Vless] UWU OWO UMU 56"
       - "[Vless] UWU OWO UMU 57"
       - "[Vless] UWU OWO UMU 58"
@@ -1348,7 +1334,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 52"
       - "[Vless] UWU OWO UMU 53"
       - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
+
       - "[Vless] UWU OWO UMU 56"
       - "[Vless] UWU OWO UMU 57"
       - "[Vless] UWU OWO UMU 58"
