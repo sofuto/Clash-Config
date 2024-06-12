@@ -601,16 +601,16 @@ proxies:
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: a218a675-60e4-4c61-b65b-fd565c400dc9
+    uuid: ba287ab2-0ec8-481a-8a49-8f84dfd99500
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: rsfndc1.cpiforpersia.uk
+    servername: uwuv2ray.pages.dev
     network: ws
     ws-opts:
-      path: /2sg8k6ktNBzuCJc1eh1994
+      path: /uwucf
       headers:
-        Host: rsfndc1.cpiforpersia.uk
+        Host: uwuv2ray.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 38"
     server: quiz.staging.vidio.com
@@ -749,18 +749,18 @@ proxies:
     udp: true
   - name: "[Vless] UWU OWO UMU 50"
     server: quiz.staging.vidio.com
-    port: 80
+    port: 443
     type: vless
-    uuid: cf8b81e4-af32-40ad-8903-af4b092f2197
+    uuid: afee09eb-ecdd-468d-86f2-0e59ec01d440
     cipher: auto
-    tls: false
+    tls: true
     skip-cert-verify: true
-    servername: Ua1.vless.site.
+    servername: uwuv2ray1.pages.dev
     network: ws
     ws-opts:
-      path: /vless @hopev2ray,@hopev2ray,@hopev2ray,@hopev2ray
+      path: /uwucf
       headers:
-        Host: Ua1.vless.site.
+        Host: uwuv2ray1.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 51"
     server: quiz.staging.vidio.com
@@ -781,31 +781,31 @@ proxies:
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 213acced-2c20-405a-9742-226caa911199
+    uuid: 35771e3d-4f9e-4cb8-8e95-9fa8804c43b6
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: Joinmahdiserver.jaiktzw.workers.dev
+    servername: uwuv2ray2.pages.dev
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /uwucf
       headers:
-        Host: Joinmahdiserver.jaiktzw.workers.dev
+        Host: uwuv2ray2.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 53"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 465fc43c-9872-40f9-bb94-ebee934e40b4
+    uuid: af8516b9-c47d-440e-8621-05a056d6f126
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
+    servername: uwuv2ray3.pages.dev
     network: ws
     ws-opts:
-      path: /
+      path: /uwucf
       headers:
-        Host: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
+        Host: uwuv2ray3.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 54"
     server: quiz.staging.vidio.com
