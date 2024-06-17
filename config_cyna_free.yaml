@@ -87,899 +87,398 @@ dns:
       - 0.0.0.0/32
 
 proxies:
+proxies:
   - name: "[Vless] UWU OWO UMU"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 95de9214-d60b-11ee-aaa8-00505603e70d
+    uuid: 2c45f0c5-8edb-495a-a5cb-6be18071832e
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: st-gb-1.brocdn.com
+    servername: uwuowoumu1.pages.dev
     network: ws
     ws-opts:
-      path: /websocket
+      path: /uwucf
       headers:
-        Host: st-gb-1.brocdn.com
+        Host: uwuowoumu1.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 2"
     server: quiz.staging.vidio.com
-    port: 8443
+    port: 443
     type: vless
-    uuid: 9a39f63e-28c8-4560-af18-b01b9916ef1b
+    uuid: 5c65e01e-e40d-47c5-a708-5bd136437d06
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: pardazesh-tgws.pages.dev
+    servername: uwuowoumu2.pages.dev
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /uwucf
       headers:
-        Host: pardazesh-tgws.pages.dev
+        Host: uwuowoumu2.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 3"
     server: quiz.staging.vidio.com
-    port: 8443
+    port: 443
     type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
+    uuid: f2456ec6-828d-4b82-b0b2-bd088bbd0095
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: jp111.ylks01.eu.org
+    servername: uwuowoumu3.pages.dev
     network: ws
     ws-opts:
-      path: /blue
+      path: /uwucf
       headers:
-        Host: jp111.ylks01.eu.org
+        Host: uwuowoumu3.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 4"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 1e038ff0-8678-464c-af28-0612d0c92b96
+    uuid: ba287ab2-0ec8-481a-8a49-8f84dfd99500
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: pesu.minusober.com
+    servername: uwuv2ray.pages.dev
     network: ws
     ws-opts:
-      path: /pesu
+      path: /uwucf
       headers:
-        Host: pesu.minusober.com
+        Host: uwuv2ray.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 5"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 9221b170-e8a3-4abf-a303-224b31558ec3
+    uuid: afee09eb-ecdd-468d-86f2-0e59ec01d440
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: cc2.kosnanatfilterchi.eu.org
+    servername: uwuv2ray1.pages.dev
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /uwucf
       headers:
-        Host: cc2.kosnanatfilterchi.eu.org
+        Host: uwuv2ray1.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 6"
     server: quiz.staging.vidio.com
-    port: 8443
+    port: 443
     type: vless
-    uuid: 8545c44f-b1b4-4295-ae98-f0b6301a537f
+    uuid: 35771e3d-4f9e-4cb8-8e95-9fa8804c43b6
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ios-azadnet1.pages.dev
+    servername: uwuv2ray2.pages.dev
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /uwucf
       headers:
-        Host: ios-azadnet1.pages.dev
+        Host: uwuv2ray2.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 7"
     server: quiz.staging.vidio.com
-    port: 8443
+    port: 443
     type: vless
-    uuid: 8545c44f-b1b4-4295-ae98-f0b6301a537f
+    uuid: af8516b9-c47d-440e-8621-05a056d6f126
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: ios-azadnet.pages.dev
+    servername: uwuv2ray3.pages.dev
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /uwucf
       headers:
-        Host: ios-azadnet.pages.dev
+        Host: uwuv2ray3.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 8"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 532c9a78-307b-4e57-863d-b8d812708308
+    uuid: 2dc513ab-f9e7-4968-bc2e-048debcba990
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: FReE-azADnet.PAGes.deV
+    servername: milimnava.pages.dev
     network: ws
     ws-opts:
-      path: /_T5_ZY9L2RQryV2A?ed=2048
+      path: /milimnavacf
       headers:
-        Host: FReE-azADnet.PAGes.deV
+        Host: milimnava.pages.dev
     udp: true
   - name: "[Vless] UWU OWO UMU 9"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 988cbe9a-48c1-4005-808e-0e2b1caf13aa
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: AZAdNetStm1.PAGeS.DEV
+    servername: sg1.v-less.biz.id
     network: ws
     ws-opts:
-      path: /cXACosb743rfbTWA?ed=2048
+      path: /vless-ws
       headers:
-        Host: AZAdNetStm1.PAGeS.DEV
+        Host: sg1.v-less.biz.id
     udp: true
   - name: "[Vless] UWU OWO UMU 10"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 532c9a78-307b-4e57-863d-b8d812708308
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: FREE-AZadNet.PAges.dEV
+    servername: sg2.v-less.biz.id
     network: ws
     ws-opts:
-      path: /dkU-cln2-GSPOV-q?ed=2048
+      path: /vless-ws
       headers:
-        Host: FREE-AZadNet.PAges.dEV
+        Host: sg2.v-less.biz.id
     udp: true
   - name: "[Vless] UWU OWO UMU 11"
     server: quiz.staging.vidio.com
-    port: 2096
+    port: 443
     type: vless
-    uuid: 988cbe9a-48c1-4005-808e-0e2b1caf13aa
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: AZAdNetStm1.PAGeS.DEV
+    servername: sg3.v-less.biz.id
     network: ws
     ws-opts:
-      path: /cXACosb743rfbTWA?ed=2048
+      path: /vless-ws
       headers:
-        Host: AZAdNetStm1.PAGeS.DEV
+        Host: sg3.v-less.biz.id
     udp: true
   - name: "[Vless] UWU OWO UMU 12"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 0ac0df1b-cfce-47b1-a286-91a0ec2fc7ef
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: pardazeshvpn-tg7.pages.dev
+    servername: my1.v-less.biz.id
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /vless-ws
       headers:
-        Host: pardazeshvpn-tg7.pages.dev
+        Host: my1.v-less.biz.id
     udp: true
   - name: "[Vless] UWU OWO UMU 13"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 8b7efacf-8e83-4e51-ab55-1263baccd4b2
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: 7f905f51.garywelch.pages.dev
+    servername: sg1.aframdani.cloud
     network: ws
     ws-opts:
-      path: /telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray?ed=2048
+      path: /vless-ws
       headers:
-        Host: 7f905f51.garywelch.pages.dev
+        Host: sg1.aframdani.cloud
     udp: true
   - name: "[Vless] UWU OWO UMU 14"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 9a4bc15d-a7d4-4181-9485-405629c36894
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: king-ae1.pages.dev
+    servername: sg2.aframdani.cloud
     network: ws
     ws-opts:
-      path: "@cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel @cpy_teel"
+      path: /vless-ws
       headers:
-        Host: king-ae1.pages.dev
+        Host: sg2.aframdani.cloud
     udp: true
   - name: "[Vless] UWU OWO UMU 15"
     server: quiz.staging.vidio.com
-    port: 8443
+    port: 443
     type: vless
-    uuid: 37d0b151-023e-4729-9994-45a7d9df5fd1
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: pardazeshvpn-tg23.pages.dev
+    servername: sg3.aframdani.cloud
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /vless-ws
       headers:
-        Host: pardazeshvpn-tg23.pages.dev
+        Host: sg3.aframdani.cloud
     udp: true
   - name: "[Vless] UWU OWO UMU 16"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: d7bbfe83-b037-48ae-996c-b98ed0441ba2
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: e10c0e4b.oodaeq2.pages.dev
+    servername: xcl.aframdani.cloud
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /vless-ws
       headers:
-        Host: e10c0e4b.oodaeq2.pages.dev
+        Host: xcl.aframdani.cloud
     udp: true
   - name: "[Vless] UWU OWO UMU 17"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 826e43d2-dbe9-41a6-bbf8-3aed2f93f5d4
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: pardazeshvpn-tg20.pages.dev
+    servername: sg4.aframdani.cloud
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /vless-ws
       headers:
-        Host: pardazeshvpn-tg20.pages.dev
+        Host: sg4.aframdani.cloud
     udp: true
   - name: "[Vless] UWU OWO UMU 18"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: bcf50589-9654-4331-93a6-da896914ec47
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: de4ecf6b.isvphp-4g8.pages.dev
+    servername: v2ray.aframdani.cloud
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /vless-ws
       headers:
-        Host: de4ecf6b.isvphp-4g8.pages.dev
+        Host: v2ray.aframdani.cloud
     udp: true
   - name: "[Vless] UWU OWO UMU 19"
     server: quiz.staging.vidio.com
-    port: 2096
+    port: 443
     type: vless
-    uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: cfed.tgzdyz2.top
+    servername: sgdo1.aframdani.cloud
     network: ws
     ws-opts:
-      path: TG@ZDYZ2
+      path: /vless-ws
       headers:
-        Host: cfed.tgzdyz2.top
+        Host: sgdo1.aframdani.cloud
     udp: true
   - name: "[Vless] UWU OWO UMU 20"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f
+    uuid: b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: juzibaipiao.5112233.xyz
+    servername: biz-xcl.aframdani.cloud
     network: ws
     ws-opts:
-      path: /?ed
+      path: /vless-ws
       headers:
-        Host: juzibaipiao.5112233.xyz
+        Host: biz-xcl.aframdani.cloud
     udp: true
   - name: "[Vless] UWU OWO UMU 21"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: MIumIumADrEkOsE.pAGeS.dev
+    servername: sg5.putrivpn.biz.id
     network: ws
     ws-opts:
-      path: /OyaFdNKpGFcX0BjG?ed=2048
+      path: /vlesscf
       headers:
-        Host: MIumIumADrEkOsE.pAGeS.dev
+        Host: sg5.putrivpn.biz.id
     udp: true
   - name: "[Vless] UWU OWO UMU 22"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: d9eb0df3-3190-4447-86b6-656fe5ff1119
+    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: mmdv2.pages.dev
+    servername: sg4.putrivpn.biz.id
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /vlesscf
       headers:
-        Host: mmdv2.pages.dev
+        Host: sg4.putrivpn.biz.id
     udp: true
   - name: "[Vless] UWU OWO UMU 23"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 7f3b2f37-819e-49ee-9f5c-215467bfde61
+    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: turkmenistan.armanibash.Shop.
+    servername: sg3.putrivpn.biz.id
     network: ws
     ws-opts:
-      path: /
+      path: /vlesscf
       headers:
-        Host: turkmenistan.armanibash.Shop.
+        Host: sg3.putrivpn.biz.id
     udp: true
   - name: "[Vless] UWU OWO UMU 24"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 9a39f63e-28c8-4560-af18-b01b9916ef1b
+    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: pardazesh-tgws.pages.dev
+    servername: sg2.putrivpn.biz.id
     network: ws
     ws-opts:
-      path: /?ed=2560
+      path: /vlesscf
       headers:
-        Host: pardazesh-tgws.pages.dev
+        Host: sg2.putrivpn.biz.id
     udp: true
   - name: "[Vless] UWU OWO UMU 25"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: fb710ee0-f2d3-421c-8556-d23e5075f57e
+    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: bpb-worker-panel-chf.pages.dev
+    servername: sg1.putrivpn.biz.id
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /vlesscf
       headers:
-        Host: bpb-worker-panel-chf.pages.dev
+        Host: sg1.putrivpn.biz.id
     udp: true
   - name: "[Vless] UWU OWO UMU 26"
     server: quiz.staging.vidio.com
     port: 443
     type: vless
-    uuid: 83aa2634-96a7-4ee6-aac1-07fd96f1c6c0
+    uuid: f9021b31-e8bd-4b4d-a1d3-c9b0c1476c44
     cipher: auto
     tls: true
     skip-cert-verify: true
-    servername: aMI-02-SJsD6TExaRobDu76.THIekliNlNT9.WorkErs.dEV
+    servername: id1.putrivpn.biz.id
     network: ws
     ws-opts:
-      path: /?ed=2048
+      path: /vlesscf
       headers:
-        Host: aMI-02-SJsD6TExaRobDu76.THIekliNlNT9.WorkErs.dEV
-    udp: true
-  - name: "[Vless] UWU OWO UMU 27"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: bf7e1009-1574-44f7-86df-6cbecd338477
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: pardazeshvpn-tg18.pages.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: pardazeshvpn-tg18.pages.dev
-    udp: true
-  - name: "[Vless] UWU OWO UMU 28"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: ecc19b72-2cc8-4690-b23d-960d3e3c6d40
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: pardazeshvpn-tg24.pages.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: pardazeshvpn-tg24.pages.dev
-    udp: true
-  - name: "[Vless] UWU OWO UMU 29"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: e6aedcd2-24ad-4bdd-82c5-006d84179197
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: 4d3d6f00.garywelch.pages.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: 4d3d6f00.garywelch.pages.dev
-    udp: true
-  - name: "[Vless] UWU OWO UMU 30"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: d7dd3a35-b68b-4992-b319-a85b8a1fc8e5
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: dns68.putata.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: dns68.putata.eu.org
-    udp: true
-  - name: "[Vless] UWU OWO UMU 31"
-    server: quiz.staging.vidio.com
-    port: 2096
-    type: vless
-    uuid: b41e1631-ceb3-47c9-ba87-c65a46f2f5a8
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: VPnerOr.sajAdHaDaDI.WEbSITe
-    network: ws
-    ws-opts:
-      path: /eOwMtmADY6cWup8R?ed=2560
-      headers:
-        Host: VPnerOr.sajAdHaDaDI.WEbSITe
-    udp: true
-  - name: "[Vless] UWU OWO UMU 32"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: 00e463Dc.beSTVPn-4xi.PAgES.dEv
-    network: ws
-    ws-opts:
-      path: /yuyg5ujoovohfscy?ed=2560
-      headers:
-        Host: 00e463Dc.beSTVPn-4xi.PAgES.dEv
-    udp: true
-  - name: "[Vless] UWU OWO UMU 33"
-    server: quiz.staging.vidio.com
-    port: 8443
-    type: vless
-    uuid: 1142470b-d8de-4e9d-99f9-dfefbbdb39e0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: pardazeshvpn-tg27.pages.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: pardazeshvpn-tg27.pages.dev
-    udp: true
-  - name: "[Vless] UWU OWO UMU 34"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: a8a09765-7681-47ba-9ea0-e0ae79d51088
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: t-netplus-4vx.pages.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: t-netplus-4vx.pages.dev
-    udp: true
-  - name: "[Vless] UWU OWO UMU 35"
-    server: quiz.staging.vidio.com
-    port: 80
-    type: vless
-    uuid: 5df7962e-f9fe-41e6-ab49-ed96ccb856a7
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: v2ra1.ecrgpk.workers.dev
-    network: ws
-    ws-opts:
-      path: /Telegram-proxy_mtm?ed=2048
-      headers:
-        Host: v2ra1.ecrgpk.workers.dev
-    udp: true
-  - name: "[Vless] UWU OWO UMU 36"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: a218a675-60e4-4c61-b65b-fd565c400dc9
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: rsfndc1.cpiforpersia.uk
-    network: ws
-    ws-opts:
-      path: /2sg8k6ktNBzuCJc1eh1994
-      headers:
-        Host: rsfndc1.cpiforpersia.uk
-    udp: true
-  - name: "[Vless] UWU OWO UMU 37"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: zdy111.kpcloud.eu.org
-    network: ws
-    ws-opts:
-      path: /?ed
-      headers:
-        Host: zdy111.kpcloud.eu.org
-    udp: true
-  - name: "[Vless] UWU OWO UMU 38"
-    server: quiz.staging.vidio.com
-    port: 8443
-    type: vless
-    uuid: ecc19b72-2cc8-4690-b23d-960d3e3c6d40
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: pardazeshvpn-tg24.pages.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: pardazeshvpn-tg24.pages.dev
-    udp: true
-  - name: "[Vless] UWU OWO UMU 39"
-    server: quiz.staging.vidio.com
-    port: 80
-    type: vless
-    uuid: 378ac207-38d3-4401-ba96-3a7931968bc5
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: ca.vpnbase.net
-    network: ws
-    ws-opts:
-      path: /http
-      headers:
-        Host: ca.vpnbase.net
-    udp: true
-  - name: "[Vless] UWU OWO UMU 40"
-    server: quiz.staging.vidio.com
-    port: 8080
-    type: vless
-    uuid: 1e248837-a2d0-4d87-9358-ba2a91daf6cc
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: 2.v2ray.debian.org.fxp.debian.org.speedtest.net.secretshop.tech
-    network: ws
-    ws-opts:
-      path: /SvnProBot-V2ray69Speed.ir.shop.com?ed=2048
-      headers:
-        Host: 2.v2ray.debian.org.fxp.debian.org.speedtest.net.secretshop.tech
-    udp: true
-  - name: "[Vless] UWU OWO UMU 41"
-    server: quiz.staging.vidio.com
-    port: 80
-    type: vless
-    uuid: d9a23a1d-853e-4b53-b5f9-351b3f1fca2f
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: Uk1.vless.site.
-    network: ws
-    ws-opts:
-      path: /vless
-      headers:
-        Host: Uk1.vless.site.
-    udp: true
-  - name: "[Vless] UWU OWO UMU 42"
-    server: quiz.staging.vidio.com
-    port: 8443
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: jp111.ylks01.eu.org
-    network: ws
-    ws-opts:
-      path: /blue
-      headers:
-        Host: jp111.ylks01.eu.org
-    udp: true
-  - name: "[Vless] UWU OWO UMU 43"
-    server: quiz.staging.vidio.com
-    port: 2095
-    type: vless
-    uuid: a13df940-020c-465f-bc89-ee5279b5cd6a
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: kk111.ylks.link
-    network: ws
-    ws-opts:
-      path: /youtube-由零開始
-      headers:
-        Host: kk111.ylks.link
-    udp: true
-  - name: "[Vless] UWU OWO UMU 44"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: 11e5b771-1d4d-4362-b4b5-e39e75981f01
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: 3e8B07A5.PUb000bpB.PAGes.Dev
-    network: ws
-    ws-opts:
-      path: /ZYgm9Gg9QBkAXfbG?ed=2560
-      headers:
-        Host: 3e8B07A5.PUb000bpB.PAGes.Dev
-    udp: true
-  - name: "[Vless] UWU OWO UMU 45"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: bBF9c21A.tECHNeTbpb.paGEs.Dev
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        Host: bBF9c21A.tECHNeTbpb.paGEs.Dev
-    udp: true
-  - name: "[Vless] UWU OWO UMU 46"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: 936a99B4.Vde5-MlX81LANeo.pAgES.dEv
-    network: ws
-    ws-opts:
-      path: /kkhhl0gssoz7m6id/zgu1lm1lcmxpbm56lmxpbms=?ed=2560
-      headers:
-        Host: 936a99B4.Vde5-MlX81LANeo.pAgES.dEv
-    udp: true
-  - name: "[Vless] UWU OWO UMU 47"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: miumiUMadReKoSE.pAgES.dEv
-    network: ws
-    ws-opts:
-      path: /oyafdnkpgfcx0bjg?ed=2048
-      headers:
-        Host: miumiUMadReKoSE.pAgES.dEv
-    udp: true
-  - name: "[Vless] UWU OWO UMU 48"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: 17a7bf97-fef5-4101-a5c5-7c730fabeeee
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: bpb-worker-panel-h5f.pages.dev
-    network: ws
-    ws-opts:
-      path: telegram-proxy_mtm/?ed=2048
-      headers:
-        Host: bpb-worker-panel-h5f.pages.dev
-    udp: true
-  - name: "[Vless] UWU OWO UMU 49"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: df4608a5-0ceb-4513-b991-596f541bccdb
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: cfdy.yueuzi.dynv6.net
-    network: ws
-    ws-opts:
-      path: /TELEGRAM-MARAMBASHI/?ed=2048
-      headers:
-        Host: cfdy.yueuzi.dynv6.net
-    udp: true
-  - name: "[Vless] UWU OWO UMU 50"
-    server: quiz.staging.vidio.com
-    port: 80
-    type: vless
-    uuid: cf8b81e4-af32-40ad-8903-af4b092f2197
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: Ua1.vless.site.
-    network: ws
-    ws-opts:
-      path: /vless @hopev2ray,@hopev2ray,@hopev2ray,@hopev2ray
-      headers:
-        Host: Ua1.vless.site.
-    udp: true
-  - name: "[Vless] UWU OWO UMU 51"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: 5aeb418b-37d4-4412-b6d0-a077b34fe347
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: fi3.vless.site
-    network: ws
-    ws-opts:
-      path: /TELEGRAM-MARAMBASHI/?ed=2048
-      headers:
-        Host: fi3.vless.site
-    udp: true
-  - name: "[Vless] UWU OWO UMU 52"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: 213acced-2c20-405a-9742-226caa911199
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: Joinmahdiserver.jaiktzw.workers.dev
-    network: ws
-    ws-opts:
-      path: /?ed=2048
-      headers:
-        Host: Joinmahdiserver.jaiktzw.workers.dev
+        Host: id1.putrivpn.biz.id
     udp: true
   - name: "[Trojan] UWU OWO UMU"
-    server: cdn-21.gsmxreality.com
-    port: 443
-    type: trojan
-    password: qj1Dz1CJmFQRhWr1SP80aA
-    skip-cert-verify: true
-    sni: cdn-21.gsmxreality.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 443trojan
-    udp: true
-  - name: "[Vless] UWU OWO UMU 53"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: 465fc43c-9872-40f9-bb94-ebee934e40b4
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: eupmaq-fyvoq0da0mdvvzehshnqqcd6inl5ihzvry3fo5veeghhfkkhertre6uy.t03w4b.workers.Dev
-    udp: true
-  - name: "[Vless] UWU OWO UMU 54"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: 6d154bf6-d60c-11ee-aaa8-00505603e70d
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: st-fr-1.brocdn.com
-    network: ws
-    ws-opts:
-      path: /websocket?ed=@MARAMBASHI,@MARAMBASHI,@MARAMBASHI,@MARAMBASHI
-      headers:
-        Host: st-fr-1.brocdn.com
-    udp: true
-  - name: "[Vless] UWU OWO UMU 55"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: 3d9c4523-b2a2-4524-a591-ff141a35a9d3
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: tl6lnel9kb9nxlnce9bf.fars-news.org
-    network: ws
-    ws-opts:
-      path: /48773/CREATIVE
-      headers:
-        Host: tl6lnel9kb9nxlnce9bf.fars-news.org
-    udp: true
-  - name: "[Vless] UWU OWO UMU 56"
-    server: quiz.staging.vidio.com
-    port: 8443
-    type: vless
-    uuid: 40bd0854-8a76-428a-993d-fea77db2a59d
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: telegram-falcunargo-stoniya.falcunar.asso.eu.org.
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: telegram-falcunargo-stoniya.falcunar.asso.eu.org.
-    udp: true
-  - name: "[Vless] UWU OWO UMU 57"
-    server: quiz.staging.vidio.com
-    port: 80
-    type: vless
-    uuid: a35017af-d228-44bd-885c-e5951ce09df6
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: dl6.heykakenakhshanemvaberanakhshanemkhadijeomanigakobraoaminfatema.com
-    network: ws
-    ws-opts:
-      path: Mmdv2rayng-V2rayngmmd-telegram-mmd_v2rayng?ed=80
-      headers:
-        Host: dl6.heykakenakhshanemvaberanakhshanemkhadijeomanigakobraoaminfatema.com
-    udp: true
-  - name: "[Vless] UWU OWO UMU 58"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vless
-    uuid: f0f67b84-2770-4413-8b26-cfb302fac247
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: v2fly.milik-fukada.eu.org
-    network: ws
-    ws-opts:
-      path: Telegram@V2ray_Alpha/?ed=2048
-      headers:
-        Host: v2fly.milik-fukada.eu.org
-    udp: true
-  - name: "[Trojan] UWU OWO UMU 2"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: trojan
-    password: qj1Dz1CJmFQRhWr1SP80aA
-    skip-cert-verify: true
-    sni: cdn-21.gsmxreality.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: 443trojan
-    udp: true
-  - name: "[Trojan] UWU OWO UMU 3"
     server: quiz.staging.vidio.com
     port: 443
     type: trojan
@@ -988,24 +487,24 @@ proxies:
     sni: jobscareerforlawyers.com
     network: ws
     ws-opts:
-      path: 6b777a91
+      path: /6b777a91
       headers:
         Host: jobscareerforlawyers.com
     udp: true
-  - name: "[Trojan] UWU OWO UMU 4"
+  - name: "[Trojan] UWU OWO UMU 2"
     server: quiz.staging.vidio.com
     port: 443
     type: trojan
     password: e8105dfd24414268b6c7652c63731097
     skip-cert-verify: true
-    sni: 6b777a91
+    sni: jobscareertoday.com
     network: ws
     ws-opts:
-      path: ?sni=6b777a91
+      path: /6b777a91
       headers:
         Host: jobscareertoday.com
     udp: true
-  - name: "[Trojan] UWU OWO UMU 5"
+  - name: "[Trojan] UWU OWO UMU 3"
     server: quiz.staging.vidio.com
     port: 443
     type: trojan
@@ -1014,11 +513,11 @@ proxies:
     sni: jobscareerfortoday.com
     network: ws
     ws-opts:
-      path: 6b777a91
+      path: /6b777a91
       headers:
         Host: jobscareerfortoday.com
     udp: true
-  - name: "[Trojan] UWU OWO UMU 6"
+  - name: "[Trojan] UWU OWO UMU 4"
     server: quiz.staging.vidio.com
     port: 443
     type: trojan
@@ -1027,255 +526,74 @@ proxies:
     sni: jobscareerforstudent.com
     network: ws
     ws-opts:
-      path: 6b777a91
+      path: /6b777a91
       headers:
         Host: jobscareerforstudent.com
     udp: true
-  - name: "[Trojan] UWU OWO UMU 7"
+  - name: "[Trojan] UWU OWO UMU 5"
     server: quiz.staging.vidio.com
-    port: 80
-    type: vless
-    uuid: 6eccc692-3876-41a8-cfb9-65da484f097e
-    cipher: auto
-    tls: false
+    port: 443
+    type: trojan
+    password: Putrivpn
     skip-cert-verify: true
-    servername: dlrozaneh.ir.
+    sni: sg-5.tingkehvpn.filegear-sg.me
     network: ws
     ws-opts:
-      path: /V2ray?ed=2048
+      path: /trojan
       headers:
-        Host: dlrozaneh.ir.
+        Host: sg-5.tingkehvpn.filegear-sg.me
+    udp: true
+  - name: "[Trojan] UWU OWO UMU 6"
+    server: quiz.staging.vidio.com
+    port: 443
+    type: trojan
+    password: Putrivpn
+    skip-cert-verify: true
+    sni: sg-4.tingkehvpn.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: sg-4.tingkehvpn.filegear-sg.me
+    udp: true
+  - name: "[Trojan] UWU OWO UMU 7"
+    server: quiz.staging.vidio.com
+    port: 443
+    type: trojan
+    password: Putrivpn
+    skip-cert-verify: true
+    sni: sg-2.tingkehvpn.filegear-sg.me
+    network: ws
+    ws-opts:
+      path: /trojan
+      headers:
+        Host: sg-2.tingkehvpn.filegear-sg.me
     udp: true
   - name: "[Trojan] UWU OWO UMU 8"
     server: quiz.staging.vidio.com
     port: 443
     type: trojan
-    password: auto
+    password: Putrivpn
     skip-cert-verify: true
-    sni: "1.1"
+    sni: sg-1.tingkehvpn.filegear-sg.me
     network: ws
     ws-opts:
-      path: ?sni=proxyIP=proxyip.oracle.fxxk.dedyn.io
+      path: /trojan
       headers:
-        Host: vip.123789.pp.uahttp?sni=1.1
+        Host: sg-1.tingkehvpn.filegear-sg.me
     udp: true
   - name: "[Trojan] UWU OWO UMU 9"
     server: quiz.staging.vidio.com
     port: 443
     type: trojan
-    password: eqUjIxW5S5
+    password: Putrivpn
     skip-cert-verify: true
-    sni: "1.1"
+    sni: sg-3.tingkehvpn.filegear-sg.me
     network: ws
     ws-opts:
-      path: ?sni=
+      path: /trojan
       headers:
-        Host: xstj.damane2111.irhttp?sni=1.1
-    udp: true
-  - name: "[Trojan] UWU OWO UMU 10"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: trojan
-    password: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
-    skip-cert-verify: true
-    sni: "1.1"
-    network: ws
-    ws-opts:
-      path: ?sni=Q177OZ8bzrxRWBtLTlTL
-      headers:
-        Host: hdfy4c6.freelines.nethttp?sni=1.1
-    udp: true
-  - name: "[VMess] UWU OWO UMU"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vmess
-    uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: obdii.cfd
-    network: ws
-    ws-opts:
-      path: /linkws
-      headers:
-        Host: obdii.cfd
-    udp: true
-  - name: "[VMess] UWU OWO UMU 2"
-    server: quiz.staging.vidio.com
-    port: 80
-    type: vmess
-    uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: cfed.tgzdyz2.top
-    network: ws
-    ws-opts:
-      path: /v118-fccxmxm35
-      headers:
-        Host: cfed.tgzdyz2.top
-    udp: true
-  - name: "[VMess] UWU OWO UMU 3"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vmess
-    uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: linde06.indiavideo.sbs
-    network: ws
-    ws-opts:
-      path: /linkws
-      headers:
-        Host: linde06.indiavideo.sbs
-    udp: true
-  - name: "[VMess] UWU OWO UMU 4"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vmess
-    uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: glweidf.cfd
-    network: ws
-    ws-opts:
-      path: /linkws
-      headers:
-        Host: glweidf.cfd
-    udp: true
-  - name: "[VMess] UWU OWO UMU 5"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vmess
-    uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: hms02.fxiaomi.sbs
-    network: ws
-    ws-opts:
-      path: /link
-      headers:
-        Host: hms02.fxiaomi.sbs
-    udp: true
-  - name: "[VMess] UWU OWO UMU 6"
-    server: quiz.staging.vidio.com
-    port: 80
-    type: vmess
-    uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: us4e-20240111.v2freevpn.com
-    network: ws
-    ws-opts:
-      path: /v149-dskds65
-      headers:
-        Host: us4e-20240111.v2freevpn.com
-    udp: true
-  - name: "[VMess] UWU OWO UMU 7"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vmess
-    uuid: bc864078-dcf3-4bf4-8dbf-ca9f200b56be
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: gwdef.sbs
-    network: ws
-    ws-opts:
-      path: /linkws
-      headers:
-        Host: gwdef.sbs
-    udp: true
-  - name: "[VMess] UWU OWO UMU 8"
-    server: quiz.staging.vidio.com
-    port: 80
-    type: vmess
-    uuid: 3a71b42c-66d2-44ad-8a80-668d4f4339ea
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: Nl2.vmess.site.
-    network: ws
-    ws-opts:
-      path: /vmess
-      headers:
-        Host: Nl2.vmess.site.
-    udp: true
-  - name: "[VMess] UWU OWO UMU 9"
-    server: quiz.staging.vidio.com
-    port: 80
-    type: vmess
-    uuid: 10c580e4-f83b-42f1-8e6a-25fc8add4da7
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: No1.vmess.site.
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: No1.vmess.site.
-    udp: true
-  - name: "[VMess] UWU OWO UMU 10"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vmess
-    uuid: f584de15-2034-4170-a723-f48c2bae5e0f
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: 1c11-muddy-rice-1c11.vetanex501.workers.dev
-    network: ws
-    ws-opts:
-      path: /afrhms16v.bestxray.buzz/linkws
-      headers:
-        Host: 1c11-muddy-rice-1c11.vetanex501.workers.dev
-    udp: true
-  - name: "[VMess] UWU OWO UMU 11"
-    server: quiz.staging.vidio.com
-    port: 443
-    type: vmess
-    uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
-    alterId: 0
-    cipher: auto
-    tls: true
-    skip-cert-verify: true
-    servername: afrhms07.xfixedfloat.cfd
-    network: ws
-    ws-opts:
-      path: /linkws
-      headers:
-        Host: afrhms07.xfixedfloat.cfd
-    udp: true
-  - name: "[VMess] UWU OWO UMU 12"
-    server: quiz.staging.vidio.com
-    port: 80
-    type: vmess
-    uuid: 1886c4a7-c395-4aee-a1a2-a816722f5d29
-    alterId: 0
-    cipher: auto
-    tls: false
-    skip-cert-verify: true
-    servername: Pl2.vmess.site.
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: Pl2.vmess.site.
+        Host: sg-3.tingkehvpn.filegear-sg.me
     udp: true
 
 proxy-groups:
@@ -1293,7 +611,7 @@ proxy-groups:
     proxies:
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-
+      - "[Vless] UWU OWO UMU 3"
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1317,39 +635,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 24"
       - "[Vless] UWU OWO UMU 25"
       - "[Vless] UWU OWO UMU 26"
-      - "[Vless] UWU OWO UMU 27"
-      - "[Vless] UWU OWO UMU 28"
-      - "[Vless] UWU OWO UMU 29"
-      - "[Vless] UWU OWO UMU 30"
-      - "[Vless] UWU OWO UMU 31"
-      - "[Vless] UWU OWO UMU 32"
-      - "[Vless] UWU OWO UMU 33"
-      - "[Vless] UWU OWO UMU 34"
-
-      - "[Vless] UWU OWO UMU 36"
-
-      - "[Vless] UWU OWO UMU 38"
-      - "[Vless] UWU OWO UMU 39"
-
-      - "[Vless] UWU OWO UMU 41"
-
-
-      - "[Vless] UWU OWO UMU 44"
-      - "[Vless] UWU OWO UMU 45"
-      - "[Vless] UWU OWO UMU 46"
-      - "[Vless] UWU OWO UMU 47"
-      - "[Vless] UWU OWO UMU 48"
-      - "[Vless] UWU OWO UMU 49"
-      - "[Vless] UWU OWO UMU 50"
-      - "[Vless] UWU OWO UMU 51"
-      - "[Vless] UWU OWO UMU 52"
-      - "[Trojan] UWU OWO UMU"
-      - "[Vless] UWU OWO UMU 53"
-      - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
-      - "[Vless] UWU OWO UMU 56"
-      - "[Vless] UWU OWO UMU 57"
-      - "[Vless] UWU OWO UMU 58"
+      - "[Trojan] UWU OWO UMU 1"
       - "[Trojan] UWU OWO UMU 2"
       - "[Trojan] UWU OWO UMU 3"
       - "[Trojan] UWU OWO UMU 4"
@@ -1358,19 +644,7 @@ proxy-groups:
       - "[Trojan] UWU OWO UMU 7"
       - "[Trojan] UWU OWO UMU 8"
       - "[Trojan] UWU OWO UMU 9"
-      - "[Trojan] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU"
-      - "[VMess] UWU OWO UMU 2"
-      - "[VMess] UWU OWO UMU 3"
-      - "[VMess] UWU OWO UMU 4"
-      - "[VMess] UWU OWO UMU 5"
-      - "[VMess] UWU OWO UMU 6"
-      - "[VMess] UWU OWO UMU 7"
-      - "[VMess] UWU OWO UMU 8"
-      - "[VMess] UWU OWO UMU 9"
-      - "[VMess] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU 11"
-      - "[VMess] UWU OWO UMU 12"
+      
   - name: ♻️ Load-Balance
     type: load-balance
     url: http://www.gstatic.com/generate_204
@@ -1379,7 +653,7 @@ proxy-groups:
     proxies:
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-
+      - "[Vless] UWU OWO UMU 3"
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1403,39 +677,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 24"
       - "[Vless] UWU OWO UMU 25"
       - "[Vless] UWU OWO UMU 26"
-      - "[Vless] UWU OWO UMU 27"
-      - "[Vless] UWU OWO UMU 28"
-      - "[Vless] UWU OWO UMU 29"
-      - "[Vless] UWU OWO UMU 30"
-      - "[Vless] UWU OWO UMU 31"
-      - "[Vless] UWU OWO UMU 32"
-      - "[Vless] UWU OWO UMU 33"
-      - "[Vless] UWU OWO UMU 34"
-
-      - "[Vless] UWU OWO UMU 36"
-
-      - "[Vless] UWU OWO UMU 38"
-      - "[Vless] UWU OWO UMU 39"
-
-      - "[Vless] UWU OWO UMU 41"
-
-
-      - "[Vless] UWU OWO UMU 44"
-      - "[Vless] UWU OWO UMU 45"
-      - "[Vless] UWU OWO UMU 46"
-      - "[Vless] UWU OWO UMU 47"
-      - "[Vless] UWU OWO UMU 48"
-      - "[Vless] UWU OWO UMU 49"
-      - "[Vless] UWU OWO UMU 50"
-      - "[Vless] UWU OWO UMU 51"
-      - "[Vless] UWU OWO UMU 52"
-      - "[Trojan] UWU OWO UMU"
-      - "[Vless] UWU OWO UMU 53"
-      - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
-      - "[Vless] UWU OWO UMU 56"
-      - "[Vless] UWU OWO UMU 57"
-      - "[Vless] UWU OWO UMU 58"
+      - "[Trojan] UWU OWO UMU 1"
       - "[Trojan] UWU OWO UMU 2"
       - "[Trojan] UWU OWO UMU 3"
       - "[Trojan] UWU OWO UMU 4"
@@ -1444,19 +686,7 @@ proxy-groups:
       - "[Trojan] UWU OWO UMU 7"
       - "[Trojan] UWU OWO UMU 8"
       - "[Trojan] UWU OWO UMU 9"
-      - "[Trojan] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU"
-      - "[VMess] UWU OWO UMU 2"
-      - "[VMess] UWU OWO UMU 3"
-      - "[VMess] UWU OWO UMU 4"
-      - "[VMess] UWU OWO UMU 5"
-      - "[VMess] UWU OWO UMU 6"
-      - "[VMess] UWU OWO UMU 7"
-      - "[VMess] UWU OWO UMU 8"
-      - "[VMess] UWU OWO UMU 9"
-      - "[VMess] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU 11"
-      - "[VMess] UWU OWO UMU 12"
+      
   - name: 🌍 国外媒体 (Media Luar Negeri) 
     type: select
     proxies:
@@ -1466,7 +696,7 @@ proxy-groups:
       - 🎯 全球直连 (Koneksi Langsung Global) 
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-
+      - "[Vless] UWU OWO UMU 3"
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1490,39 +720,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 24"
       - "[Vless] UWU OWO UMU 25"
       - "[Vless] UWU OWO UMU 26"
-      - "[Vless] UWU OWO UMU 27"
-      - "[Vless] UWU OWO UMU 28"
-      - "[Vless] UWU OWO UMU 29"
-      - "[Vless] UWU OWO UMU 30"
-      - "[Vless] UWU OWO UMU 31"
-      - "[Vless] UWU OWO UMU 32"
-      - "[Vless] UWU OWO UMU 33"
-      - "[Vless] UWU OWO UMU 34"
-
-      - "[Vless] UWU OWO UMU 36"
-
-      - "[Vless] UWU OWO UMU 38"
-      - "[Vless] UWU OWO UMU 39"
-
-      - "[Vless] UWU OWO UMU 41"
-
-
-      - "[Vless] UWU OWO UMU 44"
-      - "[Vless] UWU OWO UMU 45"
-      - "[Vless] UWU OWO UMU 46"
-      - "[Vless] UWU OWO UMU 47"
-      - "[Vless] UWU OWO UMU 48"
-      - "[Vless] UWU OWO UMU 49"
-      - "[Vless] UWU OWO UMU 50"
-      - "[Vless] UWU OWO UMU 51"
-      - "[Vless] UWU OWO UMU 52"
-      - "[Trojan] UWU OWO UMU"
-      - "[Vless] UWU OWO UMU 53"
-      - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
-      - "[Vless] UWU OWO UMU 56"
-      - "[Vless] UWU OWO UMU 57"
-      - "[Vless] UWU OWO UMU 58"
+      - "[Trojan] UWU OWO UMU 1"
       - "[Trojan] UWU OWO UMU 2"
       - "[Trojan] UWU OWO UMU 3"
       - "[Trojan] UWU OWO UMU 4"
@@ -1531,19 +729,7 @@ proxy-groups:
       - "[Trojan] UWU OWO UMU 7"
       - "[Trojan] UWU OWO UMU 8"
       - "[Trojan] UWU OWO UMU 9"
-      - "[Trojan] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU"
-      - "[VMess] UWU OWO UMU 2"
-      - "[VMess] UWU OWO UMU 3"
-      - "[VMess] UWU OWO UMU 4"
-      - "[VMess] UWU OWO UMU 5"
-      - "[VMess] UWU OWO UMU 6"
-      - "[VMess] UWU OWO UMU 7"
-      - "[VMess] UWU OWO UMU 8"
-      - "[VMess] UWU OWO UMU 9"
-      - "[VMess] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU 11"
-      - "[VMess] UWU OWO UMU 12"
+      
   - name: 📲 电报信息 (Informasi Telegram) 
     type: select
     proxies:
@@ -1551,7 +737,7 @@ proxy-groups:
       - 🎯 全球直连 (Koneksi Langsung Global) 
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-
+      - "[Vless] UWU OWO UMU 3"
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1575,39 +761,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 24"
       - "[Vless] UWU OWO UMU 25"
       - "[Vless] UWU OWO UMU 26"
-      - "[Vless] UWU OWO UMU 27"
-      - "[Vless] UWU OWO UMU 28"
-      - "[Vless] UWU OWO UMU 29"
-      - "[Vless] UWU OWO UMU 30"
-      - "[Vless] UWU OWO UMU 31"
-      - "[Vless] UWU OWO UMU 32"
-      - "[Vless] UWU OWO UMU 33"
-      - "[Vless] UWU OWO UMU 34"
-
-      - "[Vless] UWU OWO UMU 36"
-
-      - "[Vless] UWU OWO UMU 38"
-      - "[Vless] UWU OWO UMU 39"
-
-      - "[Vless] UWU OWO UMU 41"
-
-
-      - "[Vless] UWU OWO UMU 44"
-      - "[Vless] UWU OWO UMU 45"
-      - "[Vless] UWU OWO UMU 46"
-      - "[Vless] UWU OWO UMU 47"
-      - "[Vless] UWU OWO UMU 48"
-      - "[Vless] UWU OWO UMU 49"
-      - "[Vless] UWU OWO UMU 50"
-      - "[Vless] UWU OWO UMU 51"
-      - "[Vless] UWU OWO UMU 52"
-      - "[Trojan] UWU OWO UMU"
-      - "[Vless] UWU OWO UMU 53"
-      - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
-      - "[Vless] UWU OWO UMU 56"
-      - "[Vless] UWU OWO UMU 57"
-      - "[Vless] UWU OWO UMU 58"
+      - "[Trojan] UWU OWO UMU 1"
       - "[Trojan] UWU OWO UMU 2"
       - "[Trojan] UWU OWO UMU 3"
       - "[Trojan] UWU OWO UMU 4"
@@ -1616,19 +770,7 @@ proxy-groups:
       - "[Trojan] UWU OWO UMU 7"
       - "[Trojan] UWU OWO UMU 8"
       - "[Trojan] UWU OWO UMU 9"
-      - "[Trojan] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU"
-      - "[VMess] UWU OWO UMU 2"
-      - "[VMess] UWU OWO UMU 3"
-      - "[VMess] UWU OWO UMU 4"
-      - "[VMess] UWU OWO UMU 5"
-      - "[VMess] UWU OWO UMU 6"
-      - "[VMess] UWU OWO UMU 7"
-      - "[VMess] UWU OWO UMU 8"
-      - "[VMess] UWU OWO UMU 9"
-      - "[VMess] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU 11"
-      - "[VMess] UWU OWO UMU 12"
+      
   - name: Ⓜ️ 微软服务 (Layanan Microsoft) 
     type: select
     proxies:
@@ -1636,7 +778,7 @@ proxy-groups:
       - 🚀 节点选择 (Pemilihan Node)
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-
+      - "[Vless] UWU OWO UMU 3"
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1660,39 +802,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 24"
       - "[Vless] UWU OWO UMU 25"
       - "[Vless] UWU OWO UMU 26"
-      - "[Vless] UWU OWO UMU 27"
-      - "[Vless] UWU OWO UMU 28"
-      - "[Vless] UWU OWO UMU 29"
-      - "[Vless] UWU OWO UMU 30"
-      - "[Vless] UWU OWO UMU 31"
-      - "[Vless] UWU OWO UMU 32"
-      - "[Vless] UWU OWO UMU 33"
-      - "[Vless] UWU OWO UMU 34"
-
-      - "[Vless] UWU OWO UMU 36"
-
-      - "[Vless] UWU OWO UMU 38"
-      - "[Vless] UWU OWO UMU 39"
-
-      - "[Vless] UWU OWO UMU 41"
-
-
-      - "[Vless] UWU OWO UMU 44"
-      - "[Vless] UWU OWO UMU 45"
-      - "[Vless] UWU OWO UMU 46"
-      - "[Vless] UWU OWO UMU 47"
-      - "[Vless] UWU OWO UMU 48"
-      - "[Vless] UWU OWO UMU 49"
-      - "[Vless] UWU OWO UMU 50"
-      - "[Vless] UWU OWO UMU 51"
-      - "[Vless] UWU OWO UMU 52"
-      - "[Trojan] UWU OWO UMU"
-      - "[Vless] UWU OWO UMU 53"
-      - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
-      - "[Vless] UWU OWO UMU 56"
-      - "[Vless] UWU OWO UMU 57"
-      - "[Vless] UWU OWO UMU 58"
+      - "[Trojan] UWU OWO UMU 1"
       - "[Trojan] UWU OWO UMU 2"
       - "[Trojan] UWU OWO UMU 3"
       - "[Trojan] UWU OWO UMU 4"
@@ -1701,19 +811,7 @@ proxy-groups:
       - "[Trojan] UWU OWO UMU 7"
       - "[Trojan] UWU OWO UMU 8"
       - "[Trojan] UWU OWO UMU 9"
-      - "[Trojan] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU"
-      - "[VMess] UWU OWO UMU 2"
-      - "[VMess] UWU OWO UMU 3"
-      - "[VMess] UWU OWO UMU 4"
-      - "[VMess] UWU OWO UMU 5"
-      - "[VMess] UWU OWO UMU 6"
-      - "[VMess] UWU OWO UMU 7"
-      - "[VMess] UWU OWO UMU 8"
-      - "[VMess] UWU OWO UMU 9"
-      - "[VMess] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU 11"
-      - "[VMess] UWU OWO UMU 12"
+      
   - name: 🍎 苹果服务 (Layanan Apple) 
     type: select
     proxies:
@@ -1721,7 +819,7 @@ proxy-groups:
       - 🎯 全球直连 (Koneksi Langsung Global) 
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-
+      - "[Vless] UWU OWO UMU 3"
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1745,39 +843,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 24"
       - "[Vless] UWU OWO UMU 25"
       - "[Vless] UWU OWO UMU 26"
-      - "[Vless] UWU OWO UMU 27"
-      - "[Vless] UWU OWO UMU 28"
-      - "[Vless] UWU OWO UMU 29"
-      - "[Vless] UWU OWO UMU 30"
-      - "[Vless] UWU OWO UMU 31"
-      - "[Vless] UWU OWO UMU 32"
-      - "[Vless] UWU OWO UMU 33"
-      - "[Vless] UWU OWO UMU 34"
-
-      - "[Vless] UWU OWO UMU 36"
-
-      - "[Vless] UWU OWO UMU 38"
-      - "[Vless] UWU OWO UMU 39"
-
-      - "[Vless] UWU OWO UMU 41"
-
-
-      - "[Vless] UWU OWO UMU 44"
-      - "[Vless] UWU OWO UMU 45"
-      - "[Vless] UWU OWO UMU 46"
-      - "[Vless] UWU OWO UMU 47"
-      - "[Vless] UWU OWO UMU 48"
-      - "[Vless] UWU OWO UMU 49"
-      - "[Vless] UWU OWO UMU 50"
-      - "[Vless] UWU OWO UMU 51"
-      - "[Vless] UWU OWO UMU 52"
-      - "[Trojan] UWU OWO UMU"
-      - "[Vless] UWU OWO UMU 53"
-      - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
-      - "[Vless] UWU OWO UMU 56"
-      - "[Vless] UWU OWO UMU 57"
-      - "[Vless] UWU OWO UMU 58"
+      - "[Trojan] UWU OWO UMU 1"
       - "[Trojan] UWU OWO UMU 2"
       - "[Trojan] UWU OWO UMU 3"
       - "[Trojan] UWU OWO UMU 4"
@@ -1786,19 +852,7 @@ proxy-groups:
       - "[Trojan] UWU OWO UMU 7"
       - "[Trojan] UWU OWO UMU 8"
       - "[Trojan] UWU OWO UMU 9"
-      - "[Trojan] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU"
-      - "[VMess] UWU OWO UMU 2"
-      - "[VMess] UWU OWO UMU 3"
-      - "[VMess] UWU OWO UMU 4"
-      - "[VMess] UWU OWO UMU 5"
-      - "[VMess] UWU OWO UMU 6"
-      - "[VMess] UWU OWO UMU 7"
-      - "[VMess] UWU OWO UMU 8"
-      - "[VMess] UWU OWO UMU 9"
-      - "[VMess] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU 11"
-      - "[VMess] UWU OWO UMU 12"
+      
   - name: 🎯 全球直连 (Koneksi Langsung Global) 
     type: select
     proxies:
@@ -1825,7 +879,7 @@ proxy-groups:
       - ♻️ Load-Balance 
       - "[Vless] UWU OWO UMU"
       - "[Vless] UWU OWO UMU 2"
-
+      - "[Vless] UWU OWO UMU 3"
       - "[Vless] UWU OWO UMU 4"
       - "[Vless] UWU OWO UMU 5"
       - "[Vless] UWU OWO UMU 6"
@@ -1849,39 +903,7 @@ proxy-groups:
       - "[Vless] UWU OWO UMU 24"
       - "[Vless] UWU OWO UMU 25"
       - "[Vless] UWU OWO UMU 26"
-      - "[Vless] UWU OWO UMU 27"
-      - "[Vless] UWU OWO UMU 28"
-      - "[Vless] UWU OWO UMU 29"
-      - "[Vless] UWU OWO UMU 30"
-      - "[Vless] UWU OWO UMU 31"
-      - "[Vless] UWU OWO UMU 32"
-      - "[Vless] UWU OWO UMU 33"
-      - "[Vless] UWU OWO UMU 34"
-
-      - "[Vless] UWU OWO UMU 36"
-
-      - "[Vless] UWU OWO UMU 38"
-      - "[Vless] UWU OWO UMU 39"
-
-      - "[Vless] UWU OWO UMU 41"
-
-
-      - "[Vless] UWU OWO UMU 44"
-      - "[Vless] UWU OWO UMU 45"
-      - "[Vless] UWU OWO UMU 46"
-      - "[Vless] UWU OWO UMU 47"
-      - "[Vless] UWU OWO UMU 48"
-      - "[Vless] UWU OWO UMU 49"
-      - "[Vless] UWU OWO UMU 50"
-      - "[Vless] UWU OWO UMU 51"
-      - "[Vless] UWU OWO UMU 52"
-      - "[Trojan] UWU OWO UMU"
-      - "[Vless] UWU OWO UMU 53"
-      - "[Vless] UWU OWO UMU 54"
-      - "[Vless] UWU OWO UMU 55"
-      - "[Vless] UWU OWO UMU 56"
-      - "[Vless] UWU OWO UMU 57"
-      - "[Vless] UWU OWO UMU 58"
+      - "[Trojan] UWU OWO UMU 1"
       - "[Trojan] UWU OWO UMU 2"
       - "[Trojan] UWU OWO UMU 3"
       - "[Trojan] UWU OWO UMU 4"
@@ -1890,19 +912,6 @@ proxy-groups:
       - "[Trojan] UWU OWO UMU 7"
       - "[Trojan] UWU OWO UMU 8"
       - "[Trojan] UWU OWO UMU 9"
-      - "[Trojan] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU"
-      - "[VMess] UWU OWO UMU 2"
-      - "[VMess] UWU OWO UMU 3"
-      - "[VMess] UWU OWO UMU 4"
-      - "[VMess] UWU OWO UMU 5"
-      - "[VMess] UWU OWO UMU 6"
-      - "[VMess] UWU OWO UMU 7"
-      - "[VMess] UWU OWO UMU 8"
-      - "[VMess] UWU OWO UMU 9"
-      - "[VMess] UWU OWO UMU 10"
-      - "[VMess] UWU OWO UMU 11"
-      - "[VMess] UWU OWO UMU 12"
 
 rule-providers:
   oisd_big:
