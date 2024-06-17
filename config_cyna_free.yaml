@@ -85,8 +85,7 @@ dns:
     ipcidr:
       - 240.0.0.0/4
       - 0.0.0.0/32
-
-proxies:
+      
 proxies:
   - name: "[Vless] UWU OWO UMU"
     server: quiz.staging.vidio.com
